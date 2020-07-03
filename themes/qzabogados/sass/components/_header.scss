@@ -1,0 +1,155 @@
+header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+	padding: 5px 0;
+	background-color: $light-color;
+    z-index: 1000000000 !important;
+    box-shadow: 1px 1px 10px 0 rgba($secondary-color, 0.3);
+	.tmptnj-logo {
+		display: inline-block;
+		width: 150px;
+		height: 50px;
+		background-color: #e6e6e6;		
+	}
+	.tmptnj-nav {
+		width: calc(100% - 180px);
+		float: right;
+		text-align: right;
+		.social-links {
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 15px;
+			a {
+				color: $secondary-color;
+				@include transition(.3s ease-out);
+				em {
+					margin-right: 5px;
+					cursor: pointer;
+				}
+				&:hover { color: $primary-color; }			
+			}
+		}
+		#open-nav {
+			color: $secondary-color;
+			font-size: 24px;
+    		vertical-align: middle;
+			cursor: pointer;
+		}
+		nav {
+			position: fixed;
+			top: 0px;
+			right: -350px;
+			padding-top: 40px;
+			padding-bottom: 20px;
+			max-width: 100%;
+			width: 300px;
+			height: 100vh;
+			text-align: left;
+			background-color: $light-color;
+			overflow-y: scroll;
+			@extend .shadow;
+			@include transition(.6s ease-out);
+			&.open { right: 0px; }
+			.icon-close {
+				position: relative;
+				top: -36px;
+				right: 10px;
+				float: right;
+				color: $primary-color;
+				font-size: 25px;
+				border-bottom-left-radius: 4px;
+				cursor: pointer;
+				@include transition(.3s ease-out);
+				&:hover { color: $primary-color-dark; }
+			}
+			.menu-top-menu-container ul {
+				margin: 0px;
+				li {
+					display: block;
+					a {
+						display: block;
+						line-height: 35px;
+						padding: 0 15px;
+						@include transition(.3s ease-out);
+						&:hover { 
+							background-color: $primary-color; 
+							color: $light-color;
+						}
+					}
+					ul.sub-menu { 
+						li {
+							a { padding-left: 30px; }
+						}
+					}
+				}		
+			}
+			#searchform {
+				position: relative;
+				padding: 0 15px;
+				margin-top: 15px;
+				label { display: none; }
+				input[type="text"] {
+					margin: 0px;
+    				line-height: 35px;
+    				border: 1px solid $gray-color-light;
+    				border-radius: 3px;
+				}
+				#searchsubmit {
+					display: inline-block;
+					position: absolute;
+					top: 0px;
+					right: 15px;
+					padding: 0 10px;
+					line-height: 37px;
+					box-shadow: none;
+				}
+			}
+		}
+
+	}
+	@media #{$sm-and-down}{
+		z-index: 99999 !important;
+	}
+	@media #{$sm-and-up}{
+		.tmptnj-logo { margin-bottom: -7px; }
+		.tmptnj-nav { margin-top: 7px; }
+	}
+	@media #{$small-and-down}{
+		.tmptnj-logo {
+			display: block;
+			margin: auto;
+		}
+		.tmptnj-nav {
+			position: fixed;
+			bottom: 0px;
+			width: 100%;
+			left: 0px;
+			background-color: $light-color;
+			box-shadow: 1px -1px 10px 0 rgba(132, 132, 132, 0.37);
+			.social-links {
+				width: calc(100% - 45px);
+				text-align: center;
+				margin-right: 0px; 
+				font-size: 18px;
+			}
+			#open-nav {
+				margin-right: 10px;
+				font-size: 26px;
+			}
+			nav {
+				width: 100vw;
+				height: auto;
+				top: inherit;
+				bottom: -100vh;
+				right: 0px;
+				padding-top: 0px;
+				max-height: 100vh;
+				&.open { bottom: 0px; }
+				.icon-close {
+					top: 10px;
+				}
+			}	
+		}
+	}	
+}

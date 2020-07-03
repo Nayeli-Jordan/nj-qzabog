@@ -1,0 +1,25 @@
+====== Cambios Requeridos ======
+
+Mailchimp
+* Crear cuenta
+* Configurar formulario para suscriptores de
+* Modificar template (Estilos)
+
+Tidio
+* Crear cuenta tidio
+* Configurar en sitio
+
+Sitio web (Modificaciones)
+* Url redes socuales
+* Url contactos
+* Menú header
+* Menú footer
+* Favicon
+* Limites buscador
+
+Sitio web (Estilo)
+* Fuente google fonts
+
+Admin
+* Modificar enlaces permanentes
+* Modificar formulario contacto

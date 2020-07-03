@@ -1,0 +1,67 @@
+// Forms
+// ==========================================================================
+
+input:not([type="submit"]),
+select,
+textarea {
+	margin-bottom: 10px;
+	padding: 0 10px;
+	width: 100%;	
+	max-width: 100%;
+	line-height: 30px;
+	background-color: $light-color;
+	border-radius: 0px;
+	border: 0px;
+	border-bottom: 1px solid $gray-color-light;
+	outline: none;
+}
+textarea {
+	height: 70px;
+	line-height: 22px;
+	resize: none;
+}
+input[type="submit"] {
+    display: block;
+}
+::placeholder { font-family: $font-default; }
+
+//Hide button input date
+::-webkit-inner-spin-button {
+    display: none;
+    -webkit-appearance: none;
+}
+
+/* Validación Parsley */
+.parsley-errors-list {
+	padding: 0px!important;
+	font-size: 12px;
+	li { 
+		color: $danger-color; 
+		list-style-type: none!important;
+	}
+}
+
+/* Contact form 7 */
+.wpcf7-submit { float: right; }
+.wpcf7-not-valid-tip {
+	display: block;
+    margin-bottom: 5px;
+	font-size: 12px!important;
+}
+.wpcf7-validation-errors {
+	border: none!important;
+	margin: 0px!important;
+	margin-top: 20px!important;
+	padding: 0px!important;
+	font-size: 12px!important;
+	font-weight: $font-weight-strong!important;
+	color: #595959!important;
+}
+/* .wpcf7 {
+	background-color: #eeeeee;
+    padding: 15px 15px 30px 15px!important;
+    border-radius: 3px;
+    input:not([type="submit"]), textarea {
+    	background-color: transparent;
+    }
+} */

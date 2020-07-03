@@ -1,0 +1,51 @@
+footer {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	//color: $light-color;
+	background-color: #f4f4f4;
+	border: 1px solid #dedede;
+	a {
+		//color: $light-color;
+		&:hover { color: $primary-color; }
+	}
+	.menu-footer-menu-container {
+		ul { 
+			margin: 0px; 
+			li a {
+				display: block;
+				font-size: 14px;
+				line-height: 24px;
+			}
+		}
+	}
+	#mc_embed_signup {
+		position: relative;
+		form {
+			padding: 0px;
+			input.email {
+				padding: 0 5px;
+			    width: 100%;
+			    //color: $light-color;
+			    background-color: transparent;
+			    border: 1px solid #dedede;
+			    border-radius: 3px;
+			}
+			input#mc-embedded-subscribe {
+				position: absolute;
+				top: 0px;
+				right: 0px;
+				padding: 0 8px;
+				width: auto;
+				background-color: $primary-color;
+				border-radius: 0px;
+				border-top-right-radius: 3px;
+				border-top-left-radius: 3px;
+				box-shadow: none;
+			}		
+		}
+	}
+	@media #{$small-and-down} {
+		padding-bottom: 60px;
+	}
+}

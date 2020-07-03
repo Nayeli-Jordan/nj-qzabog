@@ -1,0 +1,53 @@
+// Modal
+// ==========================================================================
+
+.modal {
+	display: none;
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 1200;
+	transition: .5s ease-out;
+	background-color: rgba(70, 64, 64, 0.62);
+	.exit-modal {
+		@extend .bg-absolute;
+	}
+	.modal-content {
+		position: relative;
+		width: calc(100vw - 30px);
+		max-width: 650px;
+		margin: 10vh auto 0;
+		border-radius: 3px;
+		background-color: $light-color;
+		@extend .shadow;
+		.close-modal {
+			position: absolute;
+			top: -10px;
+			right: -10px;
+			width: 35px;
+			text-align: center;
+			border-radius: 3px;
+			font-size: 20px;
+			line-height: 35px;
+			color: $light-color;
+			background-color: $primary-color;
+			z-index: 2;
+			cursor: pointer;
+			@include transition(.3s ease-out);
+			&:hover {
+				background-color: $primary-color-light;
+			}
+		}
+		.modal-body {
+			padding: 5px;
+			max-height: 80vh;
+			overflow-y: auto;
+		    overflow-x: hidden;
+			&::-webkit-scrollbar {
+				width: 6px;
+			}
+		}
+	}
+}

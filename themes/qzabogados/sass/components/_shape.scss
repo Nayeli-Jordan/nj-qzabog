@@ -1,0 +1,25 @@
+// Shape
+// ==========================================================================
+
+.circle { border-radius: 50%; }
+
+.triangleTopRight,
+.triangleTopLeft,
+.triangleBottomRight,
+.triangleBottomLeft {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	z-index: 999;
+}
+.triangleBottomRight,
+.triangleBottomLeft 	{ transform: rotate(-180deg); }
+.triangleTopRight,
+.triangleTopLeft 		{ margin-bottom: -1px; }
+.triangleBottomRight,
+.triangleBottomLeft 	{ margin-top: -1px; }
+.triangleTopRight 		{ clip-path: polygon(100% 0, 0 100%, 100% 100%); }
+.triangleTopLeft 		{ clip-path: polygon(0 0, 0 100%, 100% 100%); }
+
+.triangleBottomLeft 	{ clip-path: polygon(100% 0, 0 100%, 100% 100%); }
+.triangleBottomRight 	{ clip-path: polygon(0 0, 0 100%, 100% 100%); }
