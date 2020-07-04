@@ -163,6 +163,38 @@ add_action('init', function(){
 		'supports'           => array( 'title', 'thumbnail' ),
 		//'menu_icon' 		 => 'dashicons-admin-users'
 	);
-	register_post_type( 'postLogos', $args );	
+	register_post_type( 'postLogos', $args );
+
+	// TARJETAS
+	$labels = array(
+		'name'          => 'Tarjeta digital',
+		'singular_name' => 'Tarjeta digital',
+		'add_new'       => 'Nueva Tarjeta',
+		'add_new_item'  => 'Nueva Tarjeta',
+		'edit_item'     => 'Editar Tarjeta',
+		'new_item'      => 'Nueva Tarjeta',
+		'all_items'     => 'Tarjeta digital',
+		'view_item'     => 'Ver Tarjeta',
+		'search_items'  => 'Buscar Tarjeta',
+		'not_found'     => 'No hay Tarjeta.',
+		'menu_name'     => 'Tarjeta digital'
+	);
+
+	$args = array(
+		'labels'             => $labels,
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => 'edit.php?post_type=page',
+		'query_var'          => true,
+		'rewrite'            => array( 'slug' => 'tarjeta' ),
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+		'hierarchical'       => false,
+		'menu_position'      => 6,
+		'supports'           => array( 'title', 'thumbnail' ),
+		'menu_icon' 		 => 'dashicons-admin-users'
+	);
+	register_post_type( 'tarjeta', $args );	
 
 });

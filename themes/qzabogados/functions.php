@@ -157,3 +157,52 @@ function tmptnj_slider_save_metas( $idtmptnj_slider, $tmptnj_slider ){
         }
     }
 }
+
+
+/* Tarjetas */
+add_action( 'add_meta_boxes', 'tarjeta_custom_metabox' );
+function tarjeta_custom_metabox(){
+    add_meta_box( 'tarjeta_meta', 'Información', 'display_tarjeta_atributos', 'tarjeta', 'advanced', 'default');
+}
+
+function display_tarjeta_atributos( $tarjeta ){
+    $puesto   = esc_html( get_post_meta( $tarjeta->ID, 'tarjeta_puesto', true ) );
+    $correo   = esc_html( get_post_meta( $tarjeta->ID, 'tarjeta_correo', true ) );
+    $telefono   = esc_html( get_post_meta( $tarjeta->ID, 'tarjeta_telefono', true ) );
+?>
+    <table class="tmptnj-custum-fields">
+        <tr>
+            <td><label for="tarjeta_puesto">Puesto</label></td>
+            <td>
+                <input type="text" id="tarjeta_puesto" name="tarjeta_puesto" value="<?php echo $puesto; ?>">
+            </th>
+        </tr>
+        <tr>
+            <td><label for="tarjeta_correo">Correo</label></td>
+            <td>
+                <input type="email" id="tarjeta_correo" name="tarjeta_correo" placeholder="ejemplo@@qzabogados.com.mx" value="<?php echo $correo; ?>">
+            </td>
+        </tr>
+        <tr>
+            <td><label for="tarjeta_telefono">Telefono</label></td>
+            <td>
+                <input type="tel" id="tarjeta_telefono" name="tarjeta_telefono" placeholder="5555555555" value="<?php echo $telefono; ?>">
+            </td>
+        </tr>
+    </table>
+<?php }
+
+add_action( 'save_post', 'tarjeta_save_metas', 10, 2 );
+function tarjeta_save_metas( $idtarjeta, $tarjeta ){
+    if ( $tarjeta->post_type == 'tarjeta' ){
+        if ( isset( $_POST['tarjeta_pueso'] ) ){
+            update_post_meta( $idtarjeta, 'tarjeta_pueso', $_POST['tarjeta_pueso'] );
+        }
+        if ( isset( $_POST['tarjeta_correo'] ) ){
+            update_post_meta( $idtarjeta, 'tarjeta_correo', $_POST['tarjeta_correo'] );
+        }
+        if ( isset( $_POST['tarjeta_telefono'] ) ){
+            update_post_meta( $idtarjeta, 'tarjeta_telefono', $_POST['tarjeta_telefono'] );
+        }
+    }
+}
