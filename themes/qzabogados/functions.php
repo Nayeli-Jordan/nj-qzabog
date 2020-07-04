@@ -166,9 +166,14 @@ function tarjeta_custom_metabox(){
 }
 
 function display_tarjeta_atributos( $tarjeta ){
-    $puesto   = esc_html( get_post_meta( $tarjeta->ID, 'tarjeta_puesto', true ) );
-    $correo   = esc_html( get_post_meta( $tarjeta->ID, 'tarjeta_correo', true ) );
+    $puesto     = esc_html( get_post_meta( $tarjeta->ID, 'tarjeta_puesto', true ) );
+    $correo     = esc_html( get_post_meta( $tarjeta->ID, 'tarjeta_correo', true ) );
     $telefono   = esc_html( get_post_meta( $tarjeta->ID, 'tarjeta_telefono', true ) );
+    $ubicacion   = esc_html( get_post_meta( $tarjeta->ID, 'tarjeta_ubicacion', true ) );
+    $direccion  = esc_html( get_post_meta( $tarjeta->ID, 'tarjeta_direccion', true ) );
+    $redlinkedin = esc_html( get_post_meta( $tarjeta->ID, 'tarjeta_redlinkedin', true ) );
+    $redfacebook = esc_html( get_post_meta( $tarjeta->ID, 'tarjeta_redfacebook', true ) );
+    $redtwitter  = esc_html( get_post_meta( $tarjeta->ID, 'tarjeta_redtwitter', true ) );
 ?>
     <table class="tmptnj-custum-fields">
         <tr>
@@ -189,20 +194,53 @@ function display_tarjeta_atributos( $tarjeta ){
                 <input type="tel" id="tarjeta_telefono" name="tarjeta_telefono" placeholder="5555555555" value="<?php echo $telefono; ?>">
             </td>
         </tr>
+        <tr>
+            <td><label for="tarjeta_direccion">Dirección</label></td>
+            <td>
+                <input type="text" id="tarjeta_ubicacion" name="tarjeta_ubicacion" value="<?php echo $ubicacion; ?>" placeholder="Ubicación">
+                <textarea id="tarjeta_direccion" name="tarjeta_direccion" rows="3" placeholder="Dirección"><?php echo $direccion; ?></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="tarjeta_redlinkedin">Redes sociales</label></td>
+            <td>
+                <label for="tarjeta_redlinkedin">Linkedin</label>
+                <input type="text" id="tarjeta_redlinkedin" name="tarjeta_redlinkedin" value="<?php echo $redlinkedin; ?>">
+                <label for="tarjeta_redfacebook">Facebook</label>
+                <input type="text" id="tarjeta_redfacebook" name="tarjeta_redfacebook" value="<?php echo $redfacebook; ?>">
+                <label for="tarjeta_redtwitter">Twitter</label>
+                <input type="text" id="tarjeta_redtwitter" name="tarjeta_redtwitter" value="<?php echo $redtwitter; ?>">
+            </td>
+        </tr>
     </table>
 <?php }
 
 add_action( 'save_post', 'tarjeta_save_metas', 10, 2 );
 function tarjeta_save_metas( $idtarjeta, $tarjeta ){
     if ( $tarjeta->post_type == 'tarjeta' ){
-        if ( isset( $_POST['tarjeta_pueso'] ) ){
-            update_post_meta( $idtarjeta, 'tarjeta_pueso', $_POST['tarjeta_pueso'] );
+        if ( isset( $_POST['tarjeta_puesto'] ) ){
+            update_post_meta( $idtarjeta, 'tarjeta_puesto', $_POST['tarjeta_puesto'] );
         }
         if ( isset( $_POST['tarjeta_correo'] ) ){
             update_post_meta( $idtarjeta, 'tarjeta_correo', $_POST['tarjeta_correo'] );
         }
         if ( isset( $_POST['tarjeta_telefono'] ) ){
             update_post_meta( $idtarjeta, 'tarjeta_telefono', $_POST['tarjeta_telefono'] );
+        }
+        if ( isset( $_POST['tarjeta_ubicacion'] ) ){
+            update_post_meta( $idtarjeta, 'tarjeta_ubicacion', $_POST['tarjeta_ubicacion'] );
+        }
+        if ( isset( $_POST['tarjeta_direccion'] ) ){
+            update_post_meta( $idtarjeta, 'tarjeta_direccion', $_POST['tarjeta_direccion'] );
+        }
+        if ( isset( $_POST['tarjeta_redlinkedin'] ) ){
+            update_post_meta( $idtarjeta, 'tarjeta_redlinkedin', $_POST['tarjeta_redlinkedin'] );
+        }
+        if ( isset( $_POST['tarjeta_redfacebook'] ) ){
+            update_post_meta( $idtarjeta, 'tarjeta_redfacebook', $_POST['tarjeta_redfacebook'] );
+        }
+        if ( isset( $_POST['tarjeta_redtwitter'] ) ){
+            update_post_meta( $idtarjeta, 'tarjeta_redtwitter', $_POST['tarjeta_redtwitter'] );
         }
     }
 }

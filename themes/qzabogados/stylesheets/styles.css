@@ -1,7 +1,30 @@
 @charset "UTF-8";
-/* Buttons - Lila */
-/* Bg principal - Azul */
+/* Buttons - Azul oscuro */
+/*Falta cambiarlo*/
+/* Bg principal - Azul claro */
 /* Otros - Azules */
+/*Falta cambiarlos todos hacia abajo*/
+@font-face {
+  font-family: "futura_regular";
+  src: url("../fonts/futura/futura_regular.ttf");
+  src: url("../fonts/futura/futura_regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "futura_light";
+  src: url("../fonts/futura/futura_light.ttf");
+  src: url("../fonts/futura/futura_light.ttf") format("truetype");
+  font-weight: light;
+  font-style: normal;
+}
+@font-face {
+  font-family: "futura_bold";
+  src: url("../fonts/futura/futura_bold.ttf");
+  src: url("../fonts/futura/futura_bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
 /*!
  * animate.css -http://daneden.me/animate
  * Version - 3.7.0
@@ -3295,6 +3318,70 @@
 }
 
 /* line 6, ../sass/components/_box-model.scss */
+.margin-top-5 {
+  margin-top: 5px;
+}
+
+/* line 7, ../sass/components/_box-model.scss */
+.margin-bottom-5 {
+  margin-bottom: 5px;
+}
+
+/* line 8, ../sass/components/_box-model.scss */
+.margin-left-5 {
+  margin-left: 5px;
+}
+
+/* line 9, ../sass/components/_box-model.scss */
+.margin-right-5 {
+  margin-right: 5px;
+}
+
+/* line 10, ../sass/components/_box-model.scss */
+.margin-top-bottom-5 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* line 11, ../sass/components/_box-model.scss */
+.margin-left-right-5 {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* line 13, ../sass/components/_box-model.scss */
+.padding-top-5 {
+  padding-top: 5px;
+}
+
+/* line 14, ../sass/components/_box-model.scss */
+.padding-bottom-5 {
+  padding-bottom: 5px;
+}
+
+/* line 15, ../sass/components/_box-model.scss */
+.padding-left-5 {
+  padding-left: 5px;
+}
+
+/* line 16, ../sass/components/_box-model.scss */
+.padding-right-5 {
+  padding-right: 5px;
+}
+
+/* line 17, ../sass/components/_box-model.scss */
+.padding-top-bottom-5 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* line 18, ../sass/components/_box-model.scss */
+.padding-left-right-5 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* line 6, ../sass/components/_box-model.scss */
 .margin-top-10 {
   margin-top: 10px;
 }
@@ -3356,6 +3443,70 @@
 .padding-left-right-10 {
   padding-left: 10px;
   padding-right: 10px;
+}
+
+/* line 6, ../sass/components/_box-model.scss */
+.margin-top-15 {
+  margin-top: 15px;
+}
+
+/* line 7, ../sass/components/_box-model.scss */
+.margin-bottom-15 {
+  margin-bottom: 15px;
+}
+
+/* line 8, ../sass/components/_box-model.scss */
+.margin-left-15 {
+  margin-left: 15px;
+}
+
+/* line 9, ../sass/components/_box-model.scss */
+.margin-right-15 {
+  margin-right: 15px;
+}
+
+/* line 10, ../sass/components/_box-model.scss */
+.margin-top-bottom-15 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* line 11, ../sass/components/_box-model.scss */
+.margin-left-right-15 {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+/* line 13, ../sass/components/_box-model.scss */
+.padding-top-15 {
+  padding-top: 15px;
+}
+
+/* line 14, ../sass/components/_box-model.scss */
+.padding-bottom-15 {
+  padding-bottom: 15px;
+}
+
+/* line 15, ../sass/components/_box-model.scss */
+.padding-left-15 {
+  padding-left: 15px;
+}
+
+/* line 16, ../sass/components/_box-model.scss */
+.padding-right-15 {
+  padding-right: 15px;
+}
+
+/* line 17, ../sass/components/_box-model.scss */
+.padding-top-bottom-15 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* line 18, ../sass/components/_box-model.scss */
+.padding-left-right-15 {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* line 6, ../sass/components/_box-model.scss */
@@ -3423,6 +3574,70 @@
 }
 
 /* line 6, ../sass/components/_box-model.scss */
+.margin-top-25 {
+  margin-top: 25px;
+}
+
+/* line 7, ../sass/components/_box-model.scss */
+.margin-bottom-25 {
+  margin-bottom: 25px;
+}
+
+/* line 8, ../sass/components/_box-model.scss */
+.margin-left-25 {
+  margin-left: 25px;
+}
+
+/* line 9, ../sass/components/_box-model.scss */
+.margin-right-25 {
+  margin-right: 25px;
+}
+
+/* line 10, ../sass/components/_box-model.scss */
+.margin-top-bottom-25 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+/* line 11, ../sass/components/_box-model.scss */
+.margin-left-right-25 {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+/* line 13, ../sass/components/_box-model.scss */
+.padding-top-25 {
+  padding-top: 25px;
+}
+
+/* line 14, ../sass/components/_box-model.scss */
+.padding-bottom-25 {
+  padding-bottom: 25px;
+}
+
+/* line 15, ../sass/components/_box-model.scss */
+.padding-left-25 {
+  padding-left: 25px;
+}
+
+/* line 16, ../sass/components/_box-model.scss */
+.padding-right-25 {
+  padding-right: 25px;
+}
+
+/* line 17, ../sass/components/_box-model.scss */
+.padding-top-bottom-25 {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+/* line 18, ../sass/components/_box-model.scss */
+.padding-left-right-25 {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+/* line 6, ../sass/components/_box-model.scss */
 .margin-top-30 {
   margin-top: 30px;
 }
@@ -3484,6 +3699,70 @@
 .padding-left-right-30 {
   padding-left: 30px;
   padding-right: 30px;
+}
+
+/* line 6, ../sass/components/_box-model.scss */
+.margin-top-35 {
+  margin-top: 35px;
+}
+
+/* line 7, ../sass/components/_box-model.scss */
+.margin-bottom-35 {
+  margin-bottom: 35px;
+}
+
+/* line 8, ../sass/components/_box-model.scss */
+.margin-left-35 {
+  margin-left: 35px;
+}
+
+/* line 9, ../sass/components/_box-model.scss */
+.margin-right-35 {
+  margin-right: 35px;
+}
+
+/* line 10, ../sass/components/_box-model.scss */
+.margin-top-bottom-35 {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+/* line 11, ../sass/components/_box-model.scss */
+.margin-left-right-35 {
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+/* line 13, ../sass/components/_box-model.scss */
+.padding-top-35 {
+  padding-top: 35px;
+}
+
+/* line 14, ../sass/components/_box-model.scss */
+.padding-bottom-35 {
+  padding-bottom: 35px;
+}
+
+/* line 15, ../sass/components/_box-model.scss */
+.padding-left-35 {
+  padding-left: 35px;
+}
+
+/* line 16, ../sass/components/_box-model.scss */
+.padding-right-35 {
+  padding-right: 35px;
+}
+
+/* line 17, ../sass/components/_box-model.scss */
+.padding-top-bottom-35 {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+/* line 18, ../sass/components/_box-model.scss */
+.padding-left-right-35 {
+  padding-left: 35px;
+  padding-right: 35px;
 }
 
 /* line 6, ../sass/components/_box-model.scss */
@@ -3551,6 +3830,70 @@
 }
 
 /* line 6, ../sass/components/_box-model.scss */
+.margin-top-45 {
+  margin-top: 45px;
+}
+
+/* line 7, ../sass/components/_box-model.scss */
+.margin-bottom-45 {
+  margin-bottom: 45px;
+}
+
+/* line 8, ../sass/components/_box-model.scss */
+.margin-left-45 {
+  margin-left: 45px;
+}
+
+/* line 9, ../sass/components/_box-model.scss */
+.margin-right-45 {
+  margin-right: 45px;
+}
+
+/* line 10, ../sass/components/_box-model.scss */
+.margin-top-bottom-45 {
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+/* line 11, ../sass/components/_box-model.scss */
+.margin-left-right-45 {
+  margin-left: 45px;
+  margin-right: 45px;
+}
+
+/* line 13, ../sass/components/_box-model.scss */
+.padding-top-45 {
+  padding-top: 45px;
+}
+
+/* line 14, ../sass/components/_box-model.scss */
+.padding-bottom-45 {
+  padding-bottom: 45px;
+}
+
+/* line 15, ../sass/components/_box-model.scss */
+.padding-left-45 {
+  padding-left: 45px;
+}
+
+/* line 16, ../sass/components/_box-model.scss */
+.padding-right-45 {
+  padding-right: 45px;
+}
+
+/* line 17, ../sass/components/_box-model.scss */
+.padding-top-bottom-45 {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+/* line 18, ../sass/components/_box-model.scss */
+.padding-left-right-45 {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+/* line 6, ../sass/components/_box-model.scss */
 .margin-top-50 {
   margin-top: 50px;
 }
@@ -3612,6 +3955,70 @@
 .padding-left-right-50 {
   padding-left: 50px;
   padding-right: 50px;
+}
+
+/* line 6, ../sass/components/_box-model.scss */
+.margin-top-55 {
+  margin-top: 55px;
+}
+
+/* line 7, ../sass/components/_box-model.scss */
+.margin-bottom-55 {
+  margin-bottom: 55px;
+}
+
+/* line 8, ../sass/components/_box-model.scss */
+.margin-left-55 {
+  margin-left: 55px;
+}
+
+/* line 9, ../sass/components/_box-model.scss */
+.margin-right-55 {
+  margin-right: 55px;
+}
+
+/* line 10, ../sass/components/_box-model.scss */
+.margin-top-bottom-55 {
+  margin-top: 55px;
+  margin-bottom: 55px;
+}
+
+/* line 11, ../sass/components/_box-model.scss */
+.margin-left-right-55 {
+  margin-left: 55px;
+  margin-right: 55px;
+}
+
+/* line 13, ../sass/components/_box-model.scss */
+.padding-top-55 {
+  padding-top: 55px;
+}
+
+/* line 14, ../sass/components/_box-model.scss */
+.padding-bottom-55 {
+  padding-bottom: 55px;
+}
+
+/* line 15, ../sass/components/_box-model.scss */
+.padding-left-55 {
+  padding-left: 55px;
+}
+
+/* line 16, ../sass/components/_box-model.scss */
+.padding-right-55 {
+  padding-right: 55px;
+}
+
+/* line 17, ../sass/components/_box-model.scss */
+.padding-top-bottom-55 {
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+
+/* line 18, ../sass/components/_box-model.scss */
+.padding-left-right-55 {
+  padding-left: 55px;
+  padding-right: 55px;
 }
 
 /* line 6, ../sass/components/_box-model.scss */
@@ -3679,6 +4086,70 @@
 }
 
 /* line 6, ../sass/components/_box-model.scss */
+.margin-top-65 {
+  margin-top: 65px;
+}
+
+/* line 7, ../sass/components/_box-model.scss */
+.margin-bottom-65 {
+  margin-bottom: 65px;
+}
+
+/* line 8, ../sass/components/_box-model.scss */
+.margin-left-65 {
+  margin-left: 65px;
+}
+
+/* line 9, ../sass/components/_box-model.scss */
+.margin-right-65 {
+  margin-right: 65px;
+}
+
+/* line 10, ../sass/components/_box-model.scss */
+.margin-top-bottom-65 {
+  margin-top: 65px;
+  margin-bottom: 65px;
+}
+
+/* line 11, ../sass/components/_box-model.scss */
+.margin-left-right-65 {
+  margin-left: 65px;
+  margin-right: 65px;
+}
+
+/* line 13, ../sass/components/_box-model.scss */
+.padding-top-65 {
+  padding-top: 65px;
+}
+
+/* line 14, ../sass/components/_box-model.scss */
+.padding-bottom-65 {
+  padding-bottom: 65px;
+}
+
+/* line 15, ../sass/components/_box-model.scss */
+.padding-left-65 {
+  padding-left: 65px;
+}
+
+/* line 16, ../sass/components/_box-model.scss */
+.padding-right-65 {
+  padding-right: 65px;
+}
+
+/* line 17, ../sass/components/_box-model.scss */
+.padding-top-bottom-65 {
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+/* line 18, ../sass/components/_box-model.scss */
+.padding-left-right-65 {
+  padding-left: 65px;
+  padding-right: 65px;
+}
+
+/* line 6, ../sass/components/_box-model.scss */
 .margin-top-70 {
   margin-top: 70px;
 }
@@ -3740,6 +4211,70 @@
 .padding-left-right-70 {
   padding-left: 70px;
   padding-right: 70px;
+}
+
+/* line 6, ../sass/components/_box-model.scss */
+.margin-top-75 {
+  margin-top: 75px;
+}
+
+/* line 7, ../sass/components/_box-model.scss */
+.margin-bottom-75 {
+  margin-bottom: 75px;
+}
+
+/* line 8, ../sass/components/_box-model.scss */
+.margin-left-75 {
+  margin-left: 75px;
+}
+
+/* line 9, ../sass/components/_box-model.scss */
+.margin-right-75 {
+  margin-right: 75px;
+}
+
+/* line 10, ../sass/components/_box-model.scss */
+.margin-top-bottom-75 {
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+
+/* line 11, ../sass/components/_box-model.scss */
+.margin-left-right-75 {
+  margin-left: 75px;
+  margin-right: 75px;
+}
+
+/* line 13, ../sass/components/_box-model.scss */
+.padding-top-75 {
+  padding-top: 75px;
+}
+
+/* line 14, ../sass/components/_box-model.scss */
+.padding-bottom-75 {
+  padding-bottom: 75px;
+}
+
+/* line 15, ../sass/components/_box-model.scss */
+.padding-left-75 {
+  padding-left: 75px;
+}
+
+/* line 16, ../sass/components/_box-model.scss */
+.padding-right-75 {
+  padding-right: 75px;
+}
+
+/* line 17, ../sass/components/_box-model.scss */
+.padding-top-bottom-75 {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+/* line 18, ../sass/components/_box-model.scss */
+.padding-left-right-75 {
+  padding-left: 75px;
+  padding-right: 75px;
 }
 
 /* line 6, ../sass/components/_box-model.scss */
@@ -3807,6 +4342,70 @@
 }
 
 /* line 6, ../sass/components/_box-model.scss */
+.margin-top-85 {
+  margin-top: 85px;
+}
+
+/* line 7, ../sass/components/_box-model.scss */
+.margin-bottom-85 {
+  margin-bottom: 85px;
+}
+
+/* line 8, ../sass/components/_box-model.scss */
+.margin-left-85 {
+  margin-left: 85px;
+}
+
+/* line 9, ../sass/components/_box-model.scss */
+.margin-right-85 {
+  margin-right: 85px;
+}
+
+/* line 10, ../sass/components/_box-model.scss */
+.margin-top-bottom-85 {
+  margin-top: 85px;
+  margin-bottom: 85px;
+}
+
+/* line 11, ../sass/components/_box-model.scss */
+.margin-left-right-85 {
+  margin-left: 85px;
+  margin-right: 85px;
+}
+
+/* line 13, ../sass/components/_box-model.scss */
+.padding-top-85 {
+  padding-top: 85px;
+}
+
+/* line 14, ../sass/components/_box-model.scss */
+.padding-bottom-85 {
+  padding-bottom: 85px;
+}
+
+/* line 15, ../sass/components/_box-model.scss */
+.padding-left-85 {
+  padding-left: 85px;
+}
+
+/* line 16, ../sass/components/_box-model.scss */
+.padding-right-85 {
+  padding-right: 85px;
+}
+
+/* line 17, ../sass/components/_box-model.scss */
+.padding-top-bottom-85 {
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+
+/* line 18, ../sass/components/_box-model.scss */
+.padding-left-right-85 {
+  padding-left: 85px;
+  padding-right: 85px;
+}
+
+/* line 6, ../sass/components/_box-model.scss */
 .margin-top-90 {
   margin-top: 90px;
 }
@@ -3868,6 +4467,70 @@
 .padding-left-right-90 {
   padding-left: 90px;
   padding-right: 90px;
+}
+
+/* line 6, ../sass/components/_box-model.scss */
+.margin-top-95 {
+  margin-top: 95px;
+}
+
+/* line 7, ../sass/components/_box-model.scss */
+.margin-bottom-95 {
+  margin-bottom: 95px;
+}
+
+/* line 8, ../sass/components/_box-model.scss */
+.margin-left-95 {
+  margin-left: 95px;
+}
+
+/* line 9, ../sass/components/_box-model.scss */
+.margin-right-95 {
+  margin-right: 95px;
+}
+
+/* line 10, ../sass/components/_box-model.scss */
+.margin-top-bottom-95 {
+  margin-top: 95px;
+  margin-bottom: 95px;
+}
+
+/* line 11, ../sass/components/_box-model.scss */
+.margin-left-right-95 {
+  margin-left: 95px;
+  margin-right: 95px;
+}
+
+/* line 13, ../sass/components/_box-model.scss */
+.padding-top-95 {
+  padding-top: 95px;
+}
+
+/* line 14, ../sass/components/_box-model.scss */
+.padding-bottom-95 {
+  padding-bottom: 95px;
+}
+
+/* line 15, ../sass/components/_box-model.scss */
+.padding-left-95 {
+  padding-left: 95px;
+}
+
+/* line 16, ../sass/components/_box-model.scss */
+.padding-right-95 {
+  padding-right: 95px;
+}
+
+/* line 17, ../sass/components/_box-model.scss */
+.padding-top-bottom-95 {
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
+
+/* line 18, ../sass/components/_box-model.scss */
+.padding-left-right-95 {
+  padding-left: 95px;
+  padding-right: 95px;
 }
 
 /* line 6, ../sass/components/_box-model.scss */
@@ -5480,7 +6143,7 @@ input[type="submit"] {
   font-weight: 300;
   line-height: 40px;
   text-decoration: none;
-  background-color: #603173;
+  background-color: #182a46;
   border: 0px;
   border-radius: 3px;
   cursor: pointer;
@@ -5512,7 +6175,7 @@ input[type="submit"] em {
 .btn:hover,
 button:hover,
 input[type="submit"]:hover {
-  background-color: #6f3985;
+  background-color: #1f3559;
 }
 /* line 36, ../sass/components/_buttons.scss */
 .btn.btn-small span,
@@ -5536,7 +6199,7 @@ input[type="submit"].btn-small em {
 }
 /* line 47, ../sass/components/_buttons.scss */
 .tmptnj-callToAction_btn .btn:hover {
-  background-color: #6f3985;
+  background-color: #1f3559;
 }
 
 /* line 50, ../sass/components/_buttons.scss */
@@ -5556,11 +6219,11 @@ input[type="submit"].btn-small em {
   line-height: 28px;
   text-align: center;
   border-radius: 50%;
-  background-color: #603173;
+  background-color: #182a46;
 }
 /* line 66, ../sass/components/_buttons.scss */
 .enlaceBtn:hover {
-  color: #512961;
+  color: #111f33;
 }
 
 /* line 69, ../sass/components/_buttons.scss */
@@ -5572,32 +6235,32 @@ input[type="submit"].btn-small em {
 
 /* line 4, ../sass/components/_color.scss */
 .color-primary {
-  color: #603173;
+  color: #182a46;
 }
 
 /* line 5, ../sass/components/_color.scss */
 .color-primary-light {
-  color: #6f3985;
+  color: #1f3559;
 }
 
 /* line 6, ../sass/components/_color.scss */
 .color-primary-dark {
-  color: #512961;
+  color: #111f33;
 }
 
 /* line 7, ../sass/components/_color.scss */
 .color-secondary {
-  color: #1f3345;
+  color: #e9f5fc;
 }
 
 /* line 8, ../sass/components/_color.scss */
 .color-secondary-light {
-  color: #274057;
+  color: white;
 }
 
 /* line 9, ../sass/components/_color.scss */
 .color-secondary-dark {
-  color: #172633;
+  color: #d3ebf9;
 }
 
 /* line 10, ../sass/components/_color.scss */
@@ -5627,32 +6290,32 @@ input[type="submit"].btn-small em {
 
 /* line 22, ../sass/components/_color.scss */
 .bg-primary {
-  background-color: #603173;
+  background-color: #182a46;
 }
 
 /* line 23, ../sass/components/_color.scss */
 .bg-primary-light {
-  background-color: #6f3985;
+  background-color: #1f3559;
 }
 
 /* line 24, ../sass/components/_color.scss */
 .bg-primary-dark {
-  background-color: #512961;
+  background-color: #111f33;
 }
 
 /* line 25, ../sass/components/_color.scss */
 .bg-secondary {
-  background-color: #1f3345;
+  background-color: #e9f5fc;
 }
 
 /* line 26, ../sass/components/_color.scss */
 .bg-secondary-light {
-  background-color: #274057;
+  background-color: white;
 }
 
 /* line 27, ../sass/components/_color.scss */
 .bg-secondary-dark {
-  background-color: #172633;
+  background-color: #d3ebf9;
 }
 
 /* line 28, ../sass/components/_color.scss */
@@ -5705,11 +6368,11 @@ input[type="submit"].btn-small em {
 /* line 41, ../sass/components/_effects.scss */
 .pulse {
   position: absolute;
-  top: 18px;
-  right: 10px;
+  top: 20px;
+  right: 12px;
   display: block;
-  width: 5px;
-  height: 5px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   cursor: pointer;
   box-shadow: 0 0 0 rgba(194, 72, 113, 0.15);
@@ -5790,7 +6453,7 @@ input[type="submit"] {
 
 /* line 26, ../sass/components/_forms.scss */
 ::placeholder {
-  font-family: "Open Sans", sans-serif;
+  font-family: "futura_regular", sans-serif;
 }
 
 /* line 29, ../sass/components/_forms.scss */
@@ -7369,7 +8032,7 @@ iframe.contact-map {
   font-size: 20px;
   line-height: 35px;
   color: #fff;
-  background-color: #603173;
+  background-color: #182a46;
   z-index: 2;
   cursor: pointer;
   -webkit-transition: 0.3s ease-out;
@@ -7378,7 +8041,7 @@ iframe.contact-map {
 }
 /* line 39, ../sass/components/_modal.scss */
 .modal .modal-content .close-modal:hover {
-  background-color: #6f3985;
+  background-color: #1f3559;
 }
 /* line 43, ../sass/components/_modal.scss */
 .modal .modal-content .modal-body {
@@ -11786,7 +12449,7 @@ a em {
 /* line 13, ../sass/components/_typography.scss */
 html {
   line-height: 1.5;
-  font-family: "Open Sans", sans-serif;
+  font-family: "futura_regular", sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #1a1b1d;
@@ -11796,7 +12459,7 @@ html {
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.3;
   margin: 0px;
-  font-family: "Lato", sans-serif;
+  font-family: "futura_bold", sans-serif;
   font-weight: 600;
   letter-spacing: 0.5px;
 }
@@ -11888,85 +12551,90 @@ small {
 }
 /* line 56, ../sass/components/_typography.scss */
 .font-default {
-  font-family: "Open Sans", sans-serif;
+  font-family: "futura_regular", sans-serif;
 }
 
 /* line 57, ../sass/components/_typography.scss */
-.font-title {
-  font-family: "Lato", sans-serif;
+.font-light {
+  font-family: "futura_light", sans-serif;
 }
 
-/* line 59, ../sass/components/_typography.scss */
+/* line 58, ../sass/components/_typography.scss */
+.font-bold {
+  font-family: "futura_bold", sans-serif;
+}
+
+/* line 60, ../sass/components/_typography.scss */
 .uppercase {
   text-transform: uppercase;
 }
 
-/* line 60, ../sass/components/_typography.scss */
+/* line 61, ../sass/components/_typography.scss */
 .lowercase {
   text-transform: lowercase;
 }
 
-/* line 61, ../sass/components/_typography.scss */
+/* line 62, ../sass/components/_typography.scss */
 .capitalize {
   text-transform: capitalize;
 }
 
-/* line 63, ../sass/components/_typography.scss */
+/* line 64, ../sass/components/_typography.scss */
 .text-underline {
   text-decoration: underline;
 }
 
-/* line 64, ../sass/components/_typography.scss */
+/* line 65, ../sass/components/_typography.scss */
 .text-underline-hover:hover {
   text-decoration: underline;
 }
 
-/* line 65, ../sass/components/_typography.scss */
+/* line 66, ../sass/components/_typography.scss */
 .text-line-through {
   text-decoration: line-through;
 }
 
-/* line 67, ../sass/components/_typography.scss */
+/* line 68, ../sass/components/_typography.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 68, ../sass/components/_typography.scss */
+/* line 69, ../sass/components/_typography.scss */
 .text-left {
   text-align: left;
 }
 
-/* line 69, ../sass/components/_typography.scss */
+/* line 70, ../sass/components/_typography.scss */
 .text-right {
   text-align: right;
 }
 
-/* line 70, ../sass/components/_typography.scss */
+/* line 71, ../sass/components/_typography.scss */
 .text-justify {
   text-align: justify;
 }
 
-/* line 72, ../sass/components/_typography.scss */
+/* line 73, ../sass/components/_typography.scss */
 .text-last-center {
   text-align-last: center;
 }
 
-/* line 73, ../sass/components/_typography.scss */
+/* line 74, ../sass/components/_typography.scss */
 .text-last-left {
   text-align-last: left;
 }
 
-/* line 74, ../sass/components/_typography.scss */
+/* line 75, ../sass/components/_typography.scss */
 .text-last-right {
   text-align-last: right;
 }
 
-/* line 75, ../sass/components/_typography.scss */
+/* line 76, ../sass/components/_typography.scss */
 .text-last-justify {
   text-align-last: justify;
 }
 
-/* line 77, ../sass/components/_typography.scss */
+/* line 78, ../sass/components/_typography.scss */
 .line-text-overflow {
   white-space: nowrap;
   overflow: hidden;
@@ -12054,7 +12722,7 @@ small {
 }
 /* line 69, ../sass/components/_utilities.scss */
 .tmptnj-slider .cycle-pager span.cycle-pager-active {
-  color: #603173;
+  color: #182a46;
 }
 /* line 73, ../sass/components/_utilities.scss */
 .tmptnj-slider .cycle-pager.cycle-pager_left {
@@ -12196,7 +12864,7 @@ small {
 }
 /* line 183, ../sass/components/_utilities.scss */
 .tmptnj-contact .tmptnj-contact_info a:hover {
-  color: #603173;
+  color: #182a46;
 }
 /* line 187, ../sass/components/_utilities.scss */
 .tmptnj-contact .tmptnj-contact_map .icon-location {
@@ -12253,7 +12921,7 @@ small {
 }
 /* line 228, ../sass/components/_utilities.scss */
 .tmptnj-single_sidebar ul li a:hover {
-  color: #603173;
+  color: #182a46;
 }
 
 /* line 1, ../sass/components/_header.scss */
@@ -12264,7 +12932,7 @@ header {
   padding: 5px 0;
   background-color: #fff;
   z-index: 1000000000 !important;
-  box-shadow: 1px 1px 10px 0 rgba(31, 51, 69, 0.3);
+  box-shadow: 1px 1px 10px 0 rgba(233, 245, 252, 0.3);
 }
 /* line 9, ../sass/components/_header.scss */
 header .tmptnj-logo {
@@ -12287,7 +12955,7 @@ header .tmptnj-nav .social-links {
 }
 /* line 23, ../sass/components/_header.scss */
 header .tmptnj-nav .social-links a {
-  color: #1f3345;
+  color: #e9f5fc;
   -webkit-transition: 0.3s ease-out;
   -ms-transition: 0.3s ease-out;
   transition: 0.3s ease-out;
@@ -12299,11 +12967,11 @@ header .tmptnj-nav .social-links a em {
 }
 /* line 30, ../sass/components/_header.scss */
 header .tmptnj-nav .social-links a:hover {
-  color: #603173;
+  color: #182a46;
 }
 /* line 33, ../sass/components/_header.scss */
 header .tmptnj-nav #open-nav {
-  color: #1f3345;
+  color: #e9f5fc;
   font-size: 24px;
   vertical-align: middle;
   cursor: pointer;
@@ -12335,7 +13003,7 @@ header .tmptnj-nav nav .icon-close {
   top: -36px;
   right: 10px;
   float: right;
-  color: #603173;
+  color: #182a46;
   font-size: 25px;
   border-bottom-left-radius: 4px;
   cursor: pointer;
@@ -12345,7 +13013,7 @@ header .tmptnj-nav nav .icon-close {
 }
 /* line 64, ../sass/components/_header.scss */
 header .tmptnj-nav nav .icon-close:hover {
-  color: #512961;
+  color: #111f33;
 }
 /* line 66, ../sass/components/_header.scss */
 header .tmptnj-nav nav .menu-top-menu-container ul {
@@ -12366,7 +13034,7 @@ header .tmptnj-nav nav .menu-top-menu-container ul li a {
 }
 /* line 75, ../sass/components/_header.scss */
 header .tmptnj-nav nav .menu-top-menu-container ul li a:hover {
-  background-color: #603173;
+  background-color: #182a46;
   color: #fff;
 }
 /* line 82, ../sass/components/_header.scss */
@@ -12473,7 +13141,7 @@ footer {
 }
 /* line 10, ../sass/components/_footer.scss */
 footer a:hover {
-  color: #603173;
+  color: #182a46;
 }
 /* line 13, ../sass/components/_footer.scss */
 footer .menu-footer-menu-container ul {
@@ -12508,7 +13176,7 @@ footer #mc_embed_signup form input#mc-embedded-subscribe {
   right: 0px;
   padding: 0 8px;
   width: auto;
-  background-color: #603173;
+  background-color: #182a46;
   border-radius: 0px;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
@@ -12525,4 +13193,161 @@ footer #mc_embed_signup form input#mc-embedded-subscribe {
   @page {
     margin: 0;
   }
+}
+/* line 4, ../sass/components/_tarjeta.scss */
+#tmptnj-tarjeta .tmptnj-tarjeta_header {
+  padding-bottom: 50%;
+  background-position: top center;
+}
+/* line 7, ../sass/components/_tarjeta.scss */
+#tmptnj-tarjeta .tmptnj-tarjeta_header .bg-absolute, #tmptnj-tarjeta .tmptnj-tarjeta_header .modal .exit-modal, .modal #tmptnj-tarjeta .tmptnj-tarjeta_header .exit-modal {
+  /*background-color: rgba(255,255,255,0.3);*/
+  background: white;
+  background: -moz-linear-gradient(-45deg, white 0%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, white), color-stop(25%, rgba(255, 255, 255, 0.3)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background: -webkit-linear-gradient(-45deg, white 0%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0) 100%);
+  background: -o-linear-gradient(-45deg, white 0%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0) 100%);
+  background: -ms-linear-gradient(-45deg, white 0%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(135deg, white 0%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
+}
+/* line 18, ../sass/components/_tarjeta.scss */
+#tmptnj-tarjeta .tmptnj-tarjeta_header .tmptnj-tarjeta_linkhome {
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+/* line 24, ../sass/components/_tarjeta.scss */
+#tmptnj-tarjeta .tmptnj-tarjeta_header .tmptnj-tarjeta_copy {
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #182a46;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 3px;
+}
+/* line 35, ../sass/components/_tarjeta.scss */
+#tmptnj-tarjeta .tmptnj-tarjeta_header .tmptnj-tarjeta_copy:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+/* line 38, ../sass/components/_tarjeta.scss */
+#tmptnj-tarjeta .tmptnj-tarjeta_content {
+  margin-top: -110px;
+  text-align: center;
+}
+/* line 42, ../sass/components/_tarjeta.scss */
+#tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_cabecera .bg-image, #tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_cabecera .tmptnj-slider .tmptnj-slider_slide, .tmptnj-slider #tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_cabecera .tmptnj-slider_slide {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin: 0px auto 15px;
+}
+/* line 48, ../sass/components/_tarjeta.scss */
+#tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_cabecera h2 {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+/* line 52, ../sass/components/_tarjeta.scss */
+#tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_cabecera .tmptnj-tarjeta_linkhome {
+  display: block;
+  margin: 15px 0;
+}
+/* line 57, ../sass/components/_tarjeta.scss */
+#tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_description {
+  background-color: #e9f5fc;
+  margin-top: 15px;
+  padding: 35px 0 0;
+}
+/* line 61, ../sass/components/_tarjeta.scss */
+#tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_description .tmptnj-tarjeta_contacto {
+  margin-bottom: 20px;
+}
+/* line 63, ../sass/components/_tarjeta.scss */
+#tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_description .tmptnj-tarjeta_contacto a {
+  display: inline-block;
+  margin-bottom: 20px;
+  width: 45px;
+  text-align: center;
+  color: #fff;
+  line-height: 45px;
+  font-size: 24px;
+  background-color: #182a46;
+  border-radius: 50%;
+  margin: 0 3px;
+}
+/* line 74, ../sass/components/_tarjeta.scss */
+#tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_description .tmptnj-tarjeta_contacto a:hover {
+  background-color: #1f3559;
+}
+/* line 79, ../sass/components/_tarjeta.scss */
+#tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_description .tmptnj-tarjeta_ubicacion {
+  padding-bottom: 30px;
+}
+/* line 81, ../sass/components/_tarjeta.scss */
+#tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_description .tmptnj-tarjeta_ubicacion #tmptnj-tarjeta_btnubicacion {
+  width: 95%;
+  margin: auto;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #182a46;
+  border-radius: 3px;
+  cursor: pointer;
+}
+/* line 90, ../sass/components/_tarjeta.scss */
+#tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_description .tmptnj-tarjeta_ubicacion #tmptnj-tarjeta_btnubicacion:hover, #tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_description .tmptnj-tarjeta_ubicacion #tmptnj-tarjeta_btnubicacion.active {
+  background-color: #111f33;
+}
+/* line 92, ../sass/components/_tarjeta.scss */
+#tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_description .tmptnj-tarjeta_ubicacion #tmptnj-tarjeta_mapubicacion {
+  display: none;
+  padding-top: 15px;
+  -webkit-transition: 0.3s ease-out;
+  -ms-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+/* line 96, ../sass/components/_tarjeta.scss */
+#tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_description .tmptnj-tarjeta_ubicacion #tmptnj-tarjeta_mapubicacion.active {
+  display: block;
+}
+/* line 99, ../sass/components/_tarjeta.scss */
+#tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_description .tmptnj-tarjeta_ubicacion #tmptnj-tarjeta_mapubicacion .bg-image, #tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_description .tmptnj-tarjeta_ubicacion #tmptnj-tarjeta_mapubicacion .tmptnj-slider .tmptnj-slider_slide, .tmptnj-slider #tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_description .tmptnj-tarjeta_ubicacion #tmptnj-tarjeta_mapubicacion .tmptnj-slider_slide {
+  padding-bottom: 65%;
+}
+/* line 102, ../sass/components/_tarjeta.scss */
+#tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_description .tmptnj-tarjeta_ubicacion #tmptnj-tarjeta_mapubicacion .bg-image em, #tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_description .tmptnj-tarjeta_ubicacion #tmptnj-tarjeta_mapubicacion .tmptnj-slider .tmptnj-slider_slide em, .tmptnj-slider #tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_description .tmptnj-tarjeta_ubicacion #tmptnj-tarjeta_mapubicacion .tmptnj-slider_slide em {
+  font-size: 35px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* line 109, ../sass/components/_tarjeta.scss */
+#tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_description .tmptnj-tarjeta_redes {
+  background-color: #182a46;
+  padding: 10px 0 15px;
+}
+/* line 112, ../sass/components/_tarjeta.scss */
+#tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_description .tmptnj-tarjeta_redes a {
+  display: inline-block;
+  margin: 0 3px;
+  font-size: 24px;
+  color: #fff;
+}
+/* line 120, ../sass/components/_tarjeta.scss */
+#tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_footer {
+  padding: 10px 0;
+}
+
+/* line 127, ../sass/components/_tarjeta.scss */
+#wpadminbar {
+  display: none !important;
 }

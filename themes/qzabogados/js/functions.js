@@ -66,6 +66,15 @@ var $=jQuery.noConflict();
 			$('body').removeClass('overflow-hide');
 		});
 
+		// Tarjeta dirección
+		$("#tmptnj-tarjeta_btnubicacion").click(function() {
+			if ($("#tmptnj-tarjeta_btnubicacion").hasClass("active")) {
+				$('#tmptnj-tarjeta_btnubicacion, #tmptnj-tarjeta_mapubicacion').removeClass('active');
+			} else {
+				$('#tmptnj-tarjeta_btnubicacion, #tmptnj-tarjeta_mapubicacion').addClass('active');
+			}			
+		});
+
 	});
 })(jQuery);
  

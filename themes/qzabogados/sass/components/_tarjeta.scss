@@ -1,0 +1,127 @@
+// Single
+// ==========================================================================
+#tmptnj-tarjeta {
+	.tmptnj-tarjeta_header {
+	    padding-bottom: 50%;
+	    background-position: top center;
+	    .bg-absolute {
+	    	/*background-color: rgba(255,255,255,0.3);*/
+	    	background: rgba(255,255,255,1);
+			background: -moz-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0) 100%);
+			background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(25%, rgba(255,255,255,0.3)), color-stop(100%, rgba(255,255,255,0)));
+			background: -webkit-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0) 100%);
+			background: -o-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0) 100%);
+			background: -ms-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0) 100%);
+			background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
+	    }
+		.tmptnj-tarjeta_linkhome { 
+			display:block;
+			position: absolute;
+			top: 15px;
+			left: 15px;
+		}	 
+		.tmptnj-tarjeta_copy {
+			display:block;
+			position: absolute;
+			top: 15px;
+			right: 15px;
+			width: 40px;
+			line-height: 40px;
+			text-align: center;
+			color: $primary-color;
+			background-color: rgba(255,255,255,0.8);
+			border-radius: 3px;
+			&:hover { background-color: rgba(0,0,0,0.9); }		
+		}
+	}
+    .tmptnj-tarjeta_content {
+    	margin-top: -110px;
+	    text-align: center;
+    	.tmptnj-tarjeta_cabecera {
+	    	.bg-image {
+	    		width: 180px;
+			    height: 180px;
+			    border-radius: 50%;
+			    margin: 0px auto 15px;
+			}
+			h2 {
+				text-transform: uppercase;
+				font-size: 20px;
+			}
+			.tmptnj-tarjeta_linkhome { 
+				display:block;
+				margin: 15px 0;
+			}	     		
+    	}
+	    .tmptnj-tarjeta_description {
+			background-color: $secondary-color;
+			margin-top: 15px;
+			padding: 35px 0 0;
+			.tmptnj-tarjeta_contacto {
+				margin-bottom: 20px;
+				a {
+					display: inline-block;
+				margin-bottom: 20px;
+					width: 45px;
+					text-align: center;
+					color: $light-color;
+					line-height: 45px;
+					font-size: 24px;
+					background-color: $primary-color;
+					border-radius: 50%;
+					margin: 0 3px;
+					&:hover {
+						background-color: $primary-color-light;
+					}
+				}
+			}
+			.tmptnj-tarjeta_ubicacion {
+				padding-bottom: 30px;
+				#tmptnj-tarjeta_btnubicacion {
+					width: 95%;
+				    margin: auto;
+				    line-height: 45px;
+				    text-transform: uppercase;
+					color: $light-color;
+					background-color: $primary-color;
+				    border-radius: 3px;
+					cursor: pointer;
+					&:hover, &.active { background-color: $primary-color-dark; }
+				}
+				#tmptnj-tarjeta_mapubicacion {
+					display: none;
+					padding-top: 15px;
+					@include transition(.3s ease-out);
+					&.active {
+						display: block;
+					}
+					.bg-image {
+						padding-bottom: 65%;
+						a {  }
+						em {
+							font-size: 35px;
+							@include center-full(); 
+						}
+					}
+				}
+			}
+			.tmptnj-tarjeta_redes {
+				background-color: $primary-color;
+				padding: 10px 0 15px;
+				a {
+					display: inline-block;
+					margin: 0 3px;
+					font-size: 24px;
+					color: $light-color;
+				}
+			}
+	    }
+	    .tmptnj-tarjeta_footer {
+	    	padding: 10px 0;
+	    }
+    } 
+}
+
+
+#wpadminbar { display: none!important; }

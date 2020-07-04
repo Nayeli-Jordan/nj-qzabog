@@ -56,23 +56,26 @@
 		<?php wp_head(); ?>
 	</head>
 	<body>
-		<header class="js-header">		
-			<div class="container">
-				<a href="<?php echo SITEURL; ?>" class="tmptnj-logo"><h1 class="hide"><?php bloginfo('name'); ?></h1></a>
-				<div class="tmptnj-nav">
-					<div class="social-links "><!-- wow fadeIn -->
-						<?php include (TEMPLATEPATH . '/template/social-links.php'); ?>
+		<?php if (!is_singular( 'tarjeta' )) { ?>
+			<header class="js-header">		
+				<div class="container">
+					<a href="<?php echo SITEURL; ?>" class="tmptnj-logo"><h1 class="hide"><?php bloginfo('name'); ?></h1></a>
+					<div class="tmptnj-nav">
+						<div class="social-links "><!-- wow fadeIn -->
+							<?php include (TEMPLATEPATH . '/template/social-links.php'); ?>
+						</div>
+						<em id="open-nav" class="icon-menu"></em><!--  wow slideInRight -->
+						<nav>
+							<em class="close-nav icon-close hide-on-small"></em>
+							<?php wp_nav_menu( array( 
+								'theme_location' => 'top_menu' 
+							) ); ?>
+							<?php get_search_form(); ?>
+							<em class="close-nav icon-close hide-on-sm-and-up"></em>				
+						</nav>
 					</div>
-					<em id="open-nav" class="icon-menu"></em><!--  wow slideInRight -->
-					<nav>
-						<em class="close-nav icon-close hide-on-small"></em>
-						<?php wp_nav_menu( array( 
-							'theme_location' => 'top_menu' 
-						) ); ?>
-						<?php get_search_form(); ?>
-						<em class="close-nav icon-close hide-on-sm-and-up"></em>				
-					</nav>
 				</div>
-			</div>
-		</header>
+			</header>			
+		<?php } ?>
+
 		<div class="[ main-body ]">

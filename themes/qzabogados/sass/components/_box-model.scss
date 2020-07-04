@@ -17,7 +17,7 @@ $i: 0;
 	.padding-top-bottom-#{$i} 	{ padding-top: #{$i}#{"px"}; padding-bottom: #{$i}#{"px"}; }
 	.padding-left-right-#{$i} 	{ padding-left: #{$i}#{"px"}; padding-right: #{$i}#{"px"}; }
 
-	$i: $i + 10;
+	$i: $i + 5;
 }
 
 .margin-top--50 			{ margin-top: -50px; }

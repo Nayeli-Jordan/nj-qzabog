@@ -1,8 +1,4 @@
-<?php
-/* 
-Template Name: Archives
-*/
-get_header(); ?>
+<?php get_header(); ?>
 <section class="tmptnj-headPost margin-bottom-60">
 	<div class="tmptnj-headPost_title bg-tertiary">
 		<div class="container">

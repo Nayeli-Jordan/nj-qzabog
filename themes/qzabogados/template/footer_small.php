@@ -6,5 +6,5 @@
 	include (TEMPLATEPATH . '/template/mailchimp.php'); ?>
 </div>
 <div class="col s12 text-center">
-	<p><small>© <?php echo date("Y"); ?> <a href="https://www.behance.net/nayelijord22e2" target="_blank">Lorem ipsum dolor sit</a></small></p>
+	<p><small>© <?php echo date("Y"); ?> <a href="https://www.behance.net/nayelijord22e2" target="_blank">QZ ABOGADOS</a></small></p>
 </div>	

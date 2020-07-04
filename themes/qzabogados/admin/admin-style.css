@@ -3,4 +3,5 @@
 	display: block; 
 	text-align: left;
 }
-.tmptnj-custum-fields input  { width: 100%; }
+.tmptnj-custum-fields input, 
+.tmptnj-custum-fields textarea  { width: 100%; }
