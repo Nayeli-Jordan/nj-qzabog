@@ -13259,15 +13259,15 @@ footer #mc_embed_signup form input#mc-embedded-subscribe {
 }
 /* line 12, ../sass/components/_tarjeta.scss */
 #tmptnj-tarjeta .tmptnj-tarjeta_header .bg-absolute, #tmptnj-tarjeta .tmptnj-tarjeta_header .modal .exit-modal, .modal #tmptnj-tarjeta .tmptnj-tarjeta_header .exit-modal {
-  /*background-color: rgba(255,255,255,0.3);*/
-  background: white;
-  background: -moz-linear-gradient(-45deg, white 0%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0) 100%);
-  background: -webkit-gradient(left top, right bottom, color-stop(0%, white), color-stop(25%, rgba(255, 255, 255, 0.3)), color-stop(100%, rgba(255, 255, 255, 0)));
-  background: -webkit-linear-gradient(-45deg, white 0%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0) 100%);
-  background: -o-linear-gradient(-45deg, white 0%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0) 100%);
-  background: -ms-linear-gradient(-45deg, white 0%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0) 100%);
-  background: linear-gradient(135deg, white 0%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
+  background-color: rgba(255, 255, 255, 0.3);
+  /*	    	background: rgba(255,255,255,1);
+  			background: -moz-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0) 100%);
+  			background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(25%, rgba(255,255,255,0.3)), color-stop(100%, rgba(255,255,255,0)));
+  			background: -webkit-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0) 100%);
+  			background: -o-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0) 100%);
+  			background: -ms-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0) 100%);
+  			background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0) 100%);
+  			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );*/
 }
 /* line 23, ../sass/components/_tarjeta.scss */
 #tmptnj-tarjeta .tmptnj-tarjeta_header .tmptnj-tarjeta_linkhome {

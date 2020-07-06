@@ -19,7 +19,7 @@
 ?>
 	<section id="tmptnj-tarjeta">
 		<div class="tmptnj-tarjeta_header bg-image relative" style="background-image: url(<?php echo $banner; ?>)">
-			<!-- <div class="bg-absolute"></div> -->
+			<div class="bg-absolute"></div>
 			<a class="tmptnj-tarjeta_linkhome" href="<?php echo SITEURL; ?>" title="Sitio web QZ ABOGADOS">
 				<img src="<?php echo THEMEPATH; ?>images/tarjetas/logo.png" alt="Logo QZ ABOGADOS">
 			</a>
