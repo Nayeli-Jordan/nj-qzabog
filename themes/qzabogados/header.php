@@ -59,7 +59,10 @@
 		<?php if (!is_singular( 'tarjeta' )) { ?>
 			<header class="js-header">		
 				<div class="container">
-					<a href="<?php echo SITEURL; ?>" class="tmptnj-logo"><h1 class="hide"><?php bloginfo('name'); ?></h1></a>
+					<a href="<?php echo SITEURL; ?>" class="tmptnj-logo">
+						<h1 class="hide"><?php bloginfo('name'); ?></h1>
+						<img src="<?php echo THEMEPATH; ?>images/identidad/logo.png" alt="">
+					</a>
 					<div class="tmptnj-nav">
 						<div class="social-links "><!-- wow fadeIn -->
 							<?php include (TEMPLATEPATH . '/template/social-links.php'); ?>
