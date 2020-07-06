@@ -15,9 +15,10 @@
     $redlinkedin 	= get_post_meta( $post_id, 'tarjeta_redlinkedin', true );
     $redfacebook 	= get_post_meta( $post_id, 'tarjeta_redfacebook', true );
     $redtwitter  	= get_post_meta( $post_id, 'tarjeta_redtwitter', true );
+    $banner  	= get_post_meta( $post_id, 'tarjeta_banner', true );
 ?>
 	<section id="tmptnj-tarjeta">
-		<div class="tmptnj-tarjeta_header bg-image relative" style="background-image: url(<?php echo THEMEPATH; ?>images/tarjetas/header.jpg)">
+		<div class="tmptnj-tarjeta_header bg-image relative" style="background-image: url(<?php echo $banner; ?>)">
 			<!-- <div class="bg-absolute"></div> -->
 			<a class="tmptnj-tarjeta_linkhome" href="<?php echo SITEURL; ?>" title="Sitio web QZ ABOGADOS">
 				<img src="<?php echo THEMEPATH; ?>images/tarjetas/logo.png" alt="Logo QZ ABOGADOS">
@@ -45,9 +46,27 @@
 			</div>
 			<div class="tmptnj-tarjeta_description">
 				<div class="tmptnj-tarjeta_contacto container">
-					<a href="tel:<?php echo $telefono ?>" title="Tel. <?php echo $telefono ?>"><em class="icon-phone"></em></a>
-					<a href="https://wa.me/<?php echo $telefono ?>" title="Watsapp <?php echo $telefono ?>"><em class="icon-whatsapp"></em></a>
-					<a href="mailto:<?php echo $correo ?>" title="Correo <?php echo $correo ?>"><em class="icon-mail-alt"></em></a>
+					<div class="tmptnj-tarjeta_contacto-line"></div>
+					<a href="tel:<?php echo $telefono ?>" title="Tel. <?php echo $telefono ?>" class="inline-block">
+						<div class="btn-hexagono btn-hexagono-relleno">
+							<div class="hexagono"><em class="icon-phone"></em></div>
+						</div>
+					</a>
+					<a href="https://wa.me/<?php echo $telefono ?>" title="Watsapp <?php echo $telefono ?>" class="inline-block">
+						<div class="btn-hexagono btn-hexagono-relleno">
+							<div class="hexagono"><em class="icon-whatsapp"></em></div>
+						</div>
+					</a>
+					<a href="mailto:<?php echo $correo ?>" title="Correo <?php echo $correo ?>" class="inline-block">
+						<div class="btn-hexagono btn-hexagono-relleno">
+							<div class="hexagono"><em class="icon-mail-alt"></em></div>
+						</div>
+					</a>
+					<a href="<?php echo SITEURL; ?>" title="Sitio web QZ ABOGADOS" class="inline-block">
+						<div class="btn-hexagono btn-hexagono-borde">
+							<div class="hexagono"><div class="hexagono hexagono-small"></div><em class="icon-link"></em></div>
+						</div>
+					</a>
 				</div>
 				<div class="tmptnj-tarjeta_ubicacion">
 					<div id="tmptnj-tarjeta_btnubicacion"><em class="icon-map-1"></em> <?php echo $ubicacion ?></div>
@@ -63,8 +82,7 @@
 					<div class="container">
 						<a href="<?php echo $redlinkedin ?>" target="_blank" title="Linkedin"><em class="icon-linkedin"></em></a>
 						<a href="<?php echo $redfacebook ?>" target="_blank" title="Facebook"><em class="icon-facebook"></em></a>
-						<a href="<?php echo $redtwitter ?>" target="_blank" title="Twitter"><em class="icon-twitter"></em></a>
-						<a href="<?php echo SITEURL; ?>" target="_blank" title="Sitio web QZ ABOGADOS"><em class="icon-link"></em></a>						
+						<a href="<?php echo $redtwitter ?>" target="_blank" title="Twitter"><em class="icon-twitter"></em></a>						
 					</div>
 				</div>
 			</div>	

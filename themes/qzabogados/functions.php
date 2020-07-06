@@ -174,6 +174,7 @@ function display_tarjeta_atributos( $tarjeta ){
     $redlinkedin = esc_html( get_post_meta( $tarjeta->ID, 'tarjeta_redlinkedin', true ) );
     $redfacebook = esc_html( get_post_meta( $tarjeta->ID, 'tarjeta_redfacebook', true ) );
     $redtwitter  = esc_html( get_post_meta( $tarjeta->ID, 'tarjeta_redtwitter', true ) );
+    $banner      = esc_html( get_post_meta( $tarjeta->ID, 'tarjeta_banner', true ) );
 ?>
     <table class="tmptnj-custum-fields">
         <tr>
@@ -212,6 +213,13 @@ function display_tarjeta_atributos( $tarjeta ){
                 <input type="text" id="tarjeta_redtwitter" name="tarjeta_redtwitter" value="<?php echo $redtwitter; ?>">
             </td>
         </tr>
+        <tr>
+            <td><label for="tarjeta_banner">Imagen banner</label></td>
+            <td>
+                <input type="text" name="tarjeta_banner" id="tarjeta_banner" class="meta-image" value="<?php echo $banner; ?>">
+                <input type="button" class="button image-upload" value="Seleccionar">
+            </td>            
+        </tr>
     </table>
 <?php }
 
@@ -241,6 +249,9 @@ function tarjeta_save_metas( $idtarjeta, $tarjeta ){
         }
         if ( isset( $_POST['tarjeta_redtwitter'] ) ){
             update_post_meta( $idtarjeta, 'tarjeta_redtwitter', $_POST['tarjeta_redtwitter'] );
+        }
+        if ( isset( $_POST['tarjeta_banner'] ) ){
+            update_post_meta( $idtarjeta, 'tarjeta_banner', $_POST['tarjeta_banner'] );
         }
     }
 }

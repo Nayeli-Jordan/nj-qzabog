@@ -13256,7 +13256,6 @@ footer #mc_embed_signup form input#mc-embedded-subscribe {
 /* line 9, ../sass/components/_tarjeta.scss */
 #tmptnj-tarjeta .tmptnj-tarjeta_header {
   padding-bottom: 50%;
-  background-position: top center;
 }
 /* line 12, ../sass/components/_tarjeta.scss */
 #tmptnj-tarjeta .tmptnj-tarjeta_header .bg-absolute, #tmptnj-tarjeta .tmptnj-tarjeta_header .modal .exit-modal, .modal #tmptnj-tarjeta .tmptnj-tarjeta_header .exit-modal {
@@ -13274,7 +13273,7 @@ footer #mc_embed_signup form input#mc-embedded-subscribe {
 #tmptnj-tarjeta .tmptnj-tarjeta_header .tmptnj-tarjeta_linkhome {
   display: block;
   position: absolute;
-  top: 5px;
+  top: 10px;
   left: 15px;
 }
 /* line 29, ../sass/components/_tarjeta.scss */
@@ -13324,37 +13323,46 @@ footer #mc_embed_signup form input#mc-embedded-subscribe {
 }
 /* line 66, ../sass/components/_tarjeta.scss */
 #tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_description .tmptnj-tarjeta_contacto {
+  position: relative;
   margin-bottom: 20px;
-}
-/* line 68, ../sass/components/_tarjeta.scss */
-#tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_description .tmptnj-tarjeta_contacto a {
-  display: inline-block;
-  margin-bottom: 20px;
-  width: 45px;
-  text-align: center;
-  color: #fff;
-  line-height: 45px;
-  background-color: #182a46;
-  border-radius: 50%;
-  margin: 0 3px;
-}
-/* line 78, ../sass/components/_tarjeta.scss */
-#tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_description .tmptnj-tarjeta_contacto a em {
-  font-size: 24px;
-}
-/* line 80, ../sass/components/_tarjeta.scss */
-#tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_description .tmptnj-tarjeta_contacto a em.icon-mail-alt {
-  font-size: 22px;
-}
-/* line 82, ../sass/components/_tarjeta.scss */
-#tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_description .tmptnj-tarjeta_contacto a:hover {
-  background-color: #1f3559;
+  /*a { estilos btn redondo
+  	display: inline-block;
+  	margin-bottom: 20px;
+  	width: 45px;
+  	text-align: center;
+  	color: $light-color;
+  	line-height: 45px;
+  	background-color: $primary-color;
+  	border-radius: 50%;
+  	margin: 0 3px;
+  	em {
+  		font-size: 24px;
+  		&.icon-mail-alt { font-size: 22px }
+  	}
+  	&:hover {
+  		background-color: $primary-color-light;
+  	}
+  }*/
 }
 /* line 87, ../sass/components/_tarjeta.scss */
+#tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_description .tmptnj-tarjeta_contacto .tmptnj-tarjeta_contacto-line {
+  width: 180px;
+  height: 4px;
+  margin-top: -4px;
+  background-color: #182a46;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* line 95, ../sass/components/_tarjeta.scss */
 #tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_description .tmptnj-tarjeta_ubicacion {
   padding-bottom: 30px;
 }
-/* line 89, ../sass/components/_tarjeta.scss */
+/* line 97, ../sass/components/_tarjeta.scss */
 #tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_description .tmptnj-tarjeta_ubicacion #tmptnj-tarjeta_btnubicacion {
   width: 95%;
   margin: auto;
@@ -13365,11 +13373,11 @@ footer #mc_embed_signup form input#mc-embedded-subscribe {
   border-radius: 3px;
   cursor: pointer;
 }
-/* line 98, ../sass/components/_tarjeta.scss */
+/* line 106, ../sass/components/_tarjeta.scss */
 #tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_description .tmptnj-tarjeta_ubicacion #tmptnj-tarjeta_btnubicacion:hover, #tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_description .tmptnj-tarjeta_ubicacion #tmptnj-tarjeta_btnubicacion.active {
   background-color: #111f33;
 }
-/* line 100, ../sass/components/_tarjeta.scss */
+/* line 108, ../sass/components/_tarjeta.scss */
 #tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_description .tmptnj-tarjeta_ubicacion #tmptnj-tarjeta_mapubicacion {
   display: none;
   padding-top: 15px;
@@ -13377,15 +13385,15 @@ footer #mc_embed_signup form input#mc-embedded-subscribe {
   -ms-transition: 0.3s ease-out;
   transition: 0.3s ease-out;
 }
-/* line 104, ../sass/components/_tarjeta.scss */
+/* line 112, ../sass/components/_tarjeta.scss */
 #tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_description .tmptnj-tarjeta_ubicacion #tmptnj-tarjeta_mapubicacion.active {
   display: block;
 }
-/* line 107, ../sass/components/_tarjeta.scss */
+/* line 115, ../sass/components/_tarjeta.scss */
 #tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_description .tmptnj-tarjeta_ubicacion #tmptnj-tarjeta_mapubicacion .bg-image, #tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_description .tmptnj-tarjeta_ubicacion #tmptnj-tarjeta_mapubicacion .tmptnj-slider .tmptnj-slider_slide, .tmptnj-slider #tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_description .tmptnj-tarjeta_ubicacion #tmptnj-tarjeta_mapubicacion .tmptnj-slider_slide {
   padding-bottom: 65%;
 }
-/* line 110, ../sass/components/_tarjeta.scss */
+/* line 118, ../sass/components/_tarjeta.scss */
 #tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_description .tmptnj-tarjeta_ubicacion #tmptnj-tarjeta_mapubicacion .bg-image em, #tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_description .tmptnj-tarjeta_ubicacion #tmptnj-tarjeta_mapubicacion .tmptnj-slider .tmptnj-slider_slide em, .tmptnj-slider #tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_description .tmptnj-tarjeta_ubicacion #tmptnj-tarjeta_mapubicacion .tmptnj-slider_slide em {
   font-size: 35px;
   position: absolute;
@@ -13396,24 +13404,160 @@ footer #mc_embed_signup form input#mc-embedded-subscribe {
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 117, ../sass/components/_tarjeta.scss */
+/* line 125, ../sass/components/_tarjeta.scss */
 #tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_description .tmptnj-tarjeta_redes {
   background-color: #182a46;
   padding: 10px 0 15px;
 }
-/* line 120, ../sass/components/_tarjeta.scss */
+/* line 128, ../sass/components/_tarjeta.scss */
 #tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_description .tmptnj-tarjeta_redes a {
   display: inline-block;
   margin: 0 3px;
   font-size: 24px;
   color: #fff;
 }
-/* line 128, ../sass/components/_tarjeta.scss */
+/* line 136, ../sass/components/_tarjeta.scss */
 #tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_footer {
   padding: 10px 0;
 }
 
-/* line 135, ../sass/components/_tarjeta.scss */
+/* line 143, ../sass/components/_tarjeta.scss */
+.btn-hexagono {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  margin: 0 10px;
+}
+/* line 148, ../sass/components/_tarjeta.scss */
+.btn-hexagono .hexagono {
+  height: 25px;
+  margin: 15px 0;
+  position: relative;
+}
+/* line 152, ../sass/components/_tarjeta.scss */
+.btn-hexagono .hexagono em {
+  color: #fff;
+  font-size: 22px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  /*Estilos para eliminar espacio de bordes hexagono*/
+  background-color: #182a46;
+  border-radius: 50%;
+  width: 40px;
+  line-height: 40px;
+}
+/* line 161, ../sass/components/_tarjeta.scss */
+.btn-hexagono .hexagono em.icon-whatsapp {
+  font-size: 24px;
+}
+/* line 164, ../sass/components/_tarjeta.scss */
+.btn-hexagono .hexagono:before {
+  border-right: 24px solid transparent;
+  border-left: 24px solid transparent;
+  border-bottom-width: 15px;
+  border-bottom-style: solid;
+  content: '';
+  height: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: -15px;
+  width: 0;
+}
+/* line 177, ../sass/components/_tarjeta.scss */
+.btn-hexagono .hexagono:after {
+  border-right: 24px solid transparent;
+  border-left: 24px solid transparent;
+  border-top-width: 15px;
+  border-top-style: solid;
+  bottom: -15px;
+  content: '';
+  height: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  width: 0;
+}
+/* line 193, ../sass/components/_tarjeta.scss */
+.btn-hexagono.btn-hexagono-relleno .hexagono, .btn-hexagono.btn-hexagono-borde .hexagono {
+  background-color: #182a46;
+}
+/* line 194, ../sass/components/_tarjeta.scss */
+.btn-hexagono.btn-hexagono-relleno .hexagono:before, .btn-hexagono.btn-hexagono-borde .hexagono:before {
+  border-bottom-color: #182a46;
+}
+/* line 195, ../sass/components/_tarjeta.scss */
+.btn-hexagono.btn-hexagono-relleno .hexagono:after, .btn-hexagono.btn-hexagono-borde .hexagono:after {
+  border-top-color: #182a46;
+}
+/* line 197, ../sass/components/_tarjeta.scss */
+.btn-hexagono.btn-hexagono-relleno:hover .hexagono:not(.hexagono-small), .btn-hexagono.btn-hexagono-borde:hover .hexagono:not(.hexagono-small) {
+  background-color: #111f33;
+}
+/* line 199, ../sass/components/_tarjeta.scss */
+.btn-hexagono.btn-hexagono-relleno:hover .hexagono:not(.hexagono-small) em, .btn-hexagono.btn-hexagono-borde:hover .hexagono:not(.hexagono-small) em {
+  background-color: #111f33;
+}
+/* line 201, ../sass/components/_tarjeta.scss */
+.btn-hexagono.btn-hexagono-relleno:hover .hexagono:not(.hexagono-small):before, .btn-hexagono.btn-hexagono-borde:hover .hexagono:not(.hexagono-small):before {
+  border-bottom-color: #111f33;
+}
+/* line 202, ../sass/components/_tarjeta.scss */
+.btn-hexagono.btn-hexagono-relleno:hover .hexagono:not(.hexagono-small):after, .btn-hexagono.btn-hexagono-borde:hover .hexagono:not(.hexagono-small):after {
+  border-top-color: #111f33;
+}
+/* line 206, ../sass/components/_tarjeta.scss */
+.btn-hexagono.btn-hexagono-borde .hexagono-small {
+  background-color: #e9f5fc;
+  height: 20px;
+  margin: 18px 0;
+  width: 36px;
+  top: -5px !important;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* line 215, ../sass/components/_tarjeta.scss */
+.btn-hexagono.btn-hexagono-borde .hexagono-small:before {
+  border-bottom-color: #e9f5fc;
+  border-right: 18px solid transparent;
+  border-left: 18px solid transparent;
+  border-bottom-width: 10px;
+  top: -10px;
+}
+/* line 222, ../sass/components/_tarjeta.scss */
+.btn-hexagono.btn-hexagono-borde .hexagono-small:after {
+  border-top-color: #e9f5fc;
+  border-right: 18px solid transparent;
+  border-left: 18px solid transparent;
+  border-top-width: 10px;
+  bottom: -10px;
+}
+/* line 229, ../sass/components/_tarjeta.scss */
+.btn-hexagono.btn-hexagono-borde em {
+  color: #182a46;
+  z-index: 2;
+  background-color: #e9f5fc !important;
+  /*Estilos para eliminar espacio de bordes hexagono*/
+  width: 36px;
+  line-height: 32px;
+}
+/* line 237, ../sass/components/_tarjeta.scss */
+.btn-hexagono.btn-hexagono-borde:hover em {
+  color: #111f33;
+}
+
+/* line 246, ../sass/components/_tarjeta.scss */
 #wpadminbar {
   display: none !important;
 }

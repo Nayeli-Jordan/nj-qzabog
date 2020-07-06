@@ -8,7 +8,7 @@
 	}
 	.tmptnj-tarjeta_header {
 	    padding-bottom: 50%;
-	    background-position: top center;
+	    //background-position: top center;
 	    .bg-absolute {
 	    	/*background-color: rgba(255,255,255,0.3);*/
 	    	background: rgba(255,255,255,1);
@@ -23,7 +23,7 @@
 		.tmptnj-tarjeta_linkhome { 
 			display:block;
 			position: absolute;
-			top: 5px;
+			top: 10px;
 			left: 15px;
 		}	 
 		.tmptnj-tarjeta_copy {
@@ -64,8 +64,9 @@
 			margin-top: 15px;
 			padding: 35px 0 0;
 			.tmptnj-tarjeta_contacto {
+				position: relative;
 				margin-bottom: 20px;
-				a {
+				/*a { estilos btn redondo
 					display: inline-block;
 					margin-bottom: 20px;
 					width: 45px;
@@ -82,6 +83,13 @@
 					&:hover {
 						background-color: $primary-color-light;
 					}
+				}*/
+				.tmptnj-tarjeta_contacto-line {
+					width: 180px;
+					height: 4px;
+					margin-top: -4px;
+					background-color: $primary-color;
+					@include center-full(); 
 				}
 			}
 			.tmptnj-tarjeta_ubicacion {
@@ -130,6 +138,109 @@
 	    }
     } 
 }
+
+
+.btn-hexagono {
+	position: relative;
+	display: inline-block;
+	width: 48px;
+	margin: 0 10px;
+	.hexagono {
+	  height: 25px;
+	  margin: 15px 0;
+	  position: relative;
+	  em {
+	  	color: $light-color; 
+	  	font-size: 22px;
+	  	@include center-full(); 
+	  	/*Estilos para eliminar espacio de bordes hexagono*/
+	  	background-color: $primary-color;
+	  	border-radius: 50%;
+	  	width: 40px;
+	  	line-height: 40px;
+	  	&.icon-whatsapp { font-size: 24px; }
+	  }
+	}
+	.hexagono:before {
+	  border-right:24px solid transparent;
+	  border-left:24px solid transparent;
+	  border-bottom-width: 15px;
+	  border-bottom-style: solid;
+	  content: '';
+	  height:0;
+	  left: 0;
+	  position: absolute;
+	  right: 0;
+	  top: -15px;
+	  width: 0;
+	}
+	.hexagono:after {
+	  border-right:24px solid transparent;
+	  border-left:24px solid transparent;
+	  border-top-width: 15px;
+	  border-top-style: solid;
+	  bottom:-15px;
+	  content: '';
+	  height:0;
+	  left: 0;
+	  position: absolute;
+	  right: 0;
+	  width:0;
+
+	}
+	&.btn-hexagono-relleno,
+	&.btn-hexagono-borde {
+		.hexagono { background-color: $primary-color; }
+		.hexagono:before { border-bottom-color: $primary-color; }
+		.hexagono:after { border-top-color: $primary-color; }
+		&:hover {
+			.hexagono:not(.hexagono-small) { 
+				background-color: $primary-color-dark; 
+				em { background-color: $primary-color-dark; }
+			}
+			.hexagono:not(.hexagono-small):before { border-bottom-color: $primary-color-dark; }
+			.hexagono:not(.hexagono-small):after { border-top-color: $primary-color-dark; }	
+		}
+	}
+	&.btn-hexagono-borde {
+		.hexagono-small { 
+			background-color: $secondary-color;
+			height: 20px;
+			margin: 18px 0;
+			width: 36px;
+			top: -5px!important;
+			z-index: 1;
+			@include center-full(); 
+		}
+		.hexagono-small:before { 
+			border-bottom-color: $secondary-color;
+			border-right:18px solid transparent;
+			border-left:18px solid transparent;
+			border-bottom-width: 10px;
+			top: -10px;
+		}
+		.hexagono-small:after { 
+			border-top-color: $secondary-color;
+			border-right:18px solid transparent;
+			border-left:18px solid transparent;
+			border-top-width: 10px;
+			bottom:-10px;
+		}
+		em { 
+			color: $primary-color;
+			z-index: 2; 
+			background-color: $secondary-color!important;
+			/*Estilos para eliminar espacio de bordes hexagono*/
+			width: 36px;
+			line-height: 32px;
+		}
+		&:hover em { 
+			color: $primary-color-dark; 
+
+		}
+	}
+}
+
 
 
 #wpadminbar { display: none!important; }
