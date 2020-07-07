@@ -1,3 +1,4 @@
+<!-- tmptnj-columnsimage -->
 <section class="tmptnj-columnsImage margin-bottom-40">
 	<div class="tmptnj-columnsImage_content bg-tertiary">
 		<div class="container">

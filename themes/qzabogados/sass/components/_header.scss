@@ -2,15 +2,14 @@ header {
     position: fixed;
     top: 0px;
     width: 100%;
-	padding: 5px 0;
+	padding: 5px 0 0;
 	background-color: $light-color;
     z-index: 1000000000 !important;
-    box-shadow: 1px 1px 10px 0 rgba($secondary-color, 0.3);
+    box-shadow: 1px 1px 5px 0 rgba($secondary-color, 1);
 	.tmptnj-logo {
 		display: inline-block;
 		width: 150px;
-		height: 50px;
-		background-color: #e6e6e6;		
+		height: 50px;	
 	}
 	.tmptnj-nav {
 		width: calc(100% - 180px);
@@ -21,17 +20,17 @@ header {
 			vertical-align: middle;
 			margin-right: 15px;
 			a {
-				color: $secondary-color;
+				color: $primary-color;
 				@include transition(.3s ease-out);
 				em {
 					margin-right: 5px;
 					cursor: pointer;
 				}
-				&:hover { color: $primary-color; }			
+				&:hover { color: $primary-color-dark; }			
 			}
 		}
 		#open-nav {
-			color: $secondary-color;
+			color: $primary-color;
 			font-size: 24px;
     		vertical-align: middle;
 			cursor: pointer;
@@ -113,7 +112,7 @@ header {
 	}
 	@media #{$sm-and-up}{
 		.tmptnj-logo { margin-bottom: -7px; }
-		.tmptnj-nav { margin-top: 7px; }
+		.tmptnj-nav { margin-top: 16px; }
 	}
 	@media #{$small-and-down}{
 		.tmptnj-logo {

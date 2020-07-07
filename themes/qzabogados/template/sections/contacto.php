@@ -1,3 +1,4 @@
+<!-- tmptnj-contact -->
 <section id="tmptnj-contacto" class="tmptnj-contact_form container margin-top-bottom-60">
 	<div class="row row-complete">
 		<div class="col s12 m6 offset-m3 wow slideInLeft">
@@ -9,9 +10,8 @@
 <section class="tmptnj-contact">
 	<div class="row bg-tertiary-dark">
 		<div class="tmptnj-contact_info col s12 m6"><!--  wow slideInLeft slow -->
-			<!-- <h4 class="margin-bottom-20"><strong>Contáctanos</strong></h4> -->
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum mauris ut diam vulputate, nec scelerisque magna maximus.</p>
-			<p>Dirección: Suspendisse sit amet ex vestibulum, semper nunc quis, consequat arcu. Pellentesque feugiat molestie enim a aliquam. </p>
+			<p class="uppercase"><em class="icon-map-1"></em> World Trade Center México</p>
+			<p>Montecito 38, piso 14, oficinas 17 & 18, Col. Nápoles, Alcaldía Benito Juárez, C.P.03810, Ciudad de México.</p>
 			<div class="contact-links margin-top-10">	
 				<?php include (TEMPLATEPATH . '/template/contact-links.php'); ?>
 			</div>

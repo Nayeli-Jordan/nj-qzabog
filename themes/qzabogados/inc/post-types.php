@@ -197,4 +197,75 @@ add_action('init', function(){
 	);
 	register_post_type( 'tarjeta', $args );	
 
+
+
+	/*
+	* QZAbogados
+	*/
+
+	// Slider home
+	$labels = array(
+		'name'          => 'Intro',
+		'singular_name' => 'Intro',
+		'add_new'       => 'Nuevo Intro',
+		'add_new_item'  => 'Nuevo Intro',
+		'edit_item'     => 'Editar Intro',
+		'new_item'      => 'Nuevo Intro',
+		'all_items'     => 'Intro',
+		'view_item'     => 'Ver Intro',
+		'search_items'  => 'Buscar Intro',
+		'not_found'     => 'No hay Intro.',
+		'menu_name'     => 'Intro'
+	);
+
+	$args = array(
+		'labels'             => $labels,
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => 'edit.php?post_type=page',
+		'query_var'          => true,
+		'rewrite'            => array( 'slug' => 'intro' ),
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+		'hierarchical'       => false,
+		'menu_position'      => 6,
+		'supports'           => array( 'title', 'editor', 'thumbnail' ),
+		//'menu_icon' 		 => 'dashicons-admin-users'
+	);
+	register_post_type( 'intro', $args );	
+
+	// Servicios
+	$labels = array(
+		'name'          => 'Servicios',
+		'singular_name' => 'Servicios',
+		'add_new'       => 'Nueva servicio',
+		'add_new_item'  => 'Nueva servicio',
+		'edit_item'     => 'Editar servicio',
+		'new_item'      => 'Nuevo servicio',
+		'all_items'     => 'Servicios',
+		'view_item'     => 'Ver servicio',
+		'search_items'  => 'Buscar servicio',
+		'not_found'     => 'No hay servicio.',
+		'menu_name'     => 'Servicios'
+	);
+
+	$args = array(
+		'labels'             => $labels,
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => 'edit.php?post_type=page',
+		'query_var'          => true,
+		'rewrite'            => array( 'slug' => 'servicios' ),
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+		'hierarchical'       => false,
+		'menu_position'      => 6,
+		'supports'           => array( 'title', 'editor', 'thumbnail' ),
+		//'menu_icon' 		 => 'dashicons-admin-users'
+	);
+	register_post_type( 'servicios', $args );
+
+
 });

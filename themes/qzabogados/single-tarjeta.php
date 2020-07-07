@@ -85,9 +85,6 @@
 						<a href="<?php echo $redtwitter ?>" target="_blank" title="Twitter"><em class="icon-twitter"></em></a>						
 					</div>
 				</div>
-			</div>	
-			<div class="tmptnj-tarjeta_footer container">
-				<img src="<?php echo THEMEPATH; ?>images/tarjetas/logo_crowe.png" alt="Logo CROWE">
 			</div>
 		</div>
 	</section>

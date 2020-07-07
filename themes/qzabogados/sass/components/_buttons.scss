@@ -9,6 +9,7 @@ input[type="submit"] {
 	text-align: center;
 	font-weight: 300;
 	line-height: 40px;
+	text-transform: uppercase;
 	text-decoration: none;
 	background-color: $primary-color;
 	border: 0px;
@@ -29,7 +30,7 @@ input[type="submit"] {
 	    width: 45px;
 	    font-size: 18px;
 	    line-height: 45px;
-	    border-left: 1px solid rgba(229, 229, 229, 0.4);
+	    border-left: 1px solid rgba(255, 255, 255, 0.4);
 	}
 	&:hover { background-color: $primary-color-light; }
 	&.btn-small {
@@ -43,8 +44,10 @@ input[type="submit"] {
 	}
 }
 .tmptnj-callToAction_btn .btn { 
-	background-color: $tertiary-color-light;
-	&:hover { background-color: $primary-color-light; }
+	color: $primary-color;
+	background-color: $secondary-color;
+	em { border-left: 1px solid rgba(24, 42, 70, 0.4); }
+	&:hover { background-color: $secondary-color-light; }
 }
 
 .enlaceBtn {

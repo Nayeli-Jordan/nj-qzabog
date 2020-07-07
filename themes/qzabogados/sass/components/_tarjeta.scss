@@ -66,24 +66,6 @@
 			.tmptnj-tarjeta_contacto {
 				position: relative;
 				margin-bottom: 20px;
-				/*a { estilos btn redondo
-					display: inline-block;
-					margin-bottom: 20px;
-					width: 45px;
-					text-align: center;
-					color: $light-color;
-					line-height: 45px;
-					background-color: $primary-color;
-					border-radius: 50%;
-					margin: 0 3px;
-					em {
-						font-size: 24px;
-						&.icon-mail-alt { font-size: 22px }
-					}
-					&:hover {
-						background-color: $primary-color-light;
-					}
-				}*/
 				.tmptnj-tarjeta_contacto-line {
 					width: 180px;
 					height: 4px;
@@ -114,10 +96,13 @@
 					}
 					.bg-image {
 						padding-bottom: 65%;
-						a {  }
 						em {
 							font-size: 35px;
 							@include center-full(); 
+							.pulse {
+								top: 20px;
+								right: 20px;
+							}
 						}
 					}
 				}
@@ -133,9 +118,6 @@
 				}
 			}
 	    }
-	    .tmptnj-tarjeta_footer {
-	    	padding: 10px 0;
-	    }
     } 
 }
 
@@ -145,6 +127,7 @@
 	display: inline-block;
 	width: 48px;
 	margin: 0 10px;
+	text-align: center;
 	.hexagono {
 	  height: 25px;
 	  margin: 15px 0;

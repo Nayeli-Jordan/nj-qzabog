@@ -122,38 +122,67 @@ add_filter('pre_get_posts','njtpt_search_filter');
 * CUSTOM FUNCTIONS
 */
 
-/* Slider (tmptnj-slider) */
-add_action( 'add_meta_boxes', 'tmptnj_slider_custom_metabox' );
-function tmptnj_slider_custom_metabox(){
-    add_meta_box( 'tmptnj_slider_meta', 'Enlace Botón Slider', 'display_tmptnj_slider_atributos', 'tmptnj_slider', 'advanced', 'default');
+/* Slider (tmptnj-slider) - Intro */
+add_action( 'add_meta_boxes', 'intro_custom_metabox' );
+function intro_custom_metabox(){
+    add_meta_box( 'intro_meta', 'Enlace Botón intro', 'display_intro_atributos', 'intro', 'advanced', 'default');
 }
 
-function display_tmptnj_slider_atributos( $tmptnj_slider ){
-    $slideBtnText   = esc_html( get_post_meta( $tmptnj_slider->ID, 'tmptnj_slider_slideBtnText', true ) );
-    $slideBtnLink   = esc_html( get_post_meta( $tmptnj_slider->ID, 'tmptnj_slider_slideBtnLink', true ) );
+function display_intro_atributos( $intro ){
+    $slideBtnText   = esc_html( get_post_meta( $intro->ID, 'intro_slideBtnText', true ) );
+    $slideBtnLink   = esc_html( get_post_meta( $intro->ID, 'intro_slideBtnLink', true ) );
 ?>
     <table class="tmptnj-custum-fields">
         <tr>
             <th>
-                <label for="tmptnj_slider_slideBtnText">Texto Botón</label>
-                <input type="text" id="tmptnj_slider_slideBtnText" name="tmptnj_slider_slideBtnText" placeholder="Texto Botón" value="<?php echo $slideBtnText; ?>">
+                <label for="intro_slideBtnText">Texto Botón</label>
+                <input type="text" id="intro_slideBtnText" name="intro_slideBtnText" placeholder="Texto Botón" value="<?php echo $slideBtnText; ?>">
             </th>
             <th>
-                <label for="tmptnj_slider_slideBtnLink">Enlace Botón (URL)</label>
-                <input type="text" id="tmptnj_slider_slideBtnLink" name="tmptnj_slider_slideBtnLink" placeholder="URL" value="<?php echo $slideBtnLink; ?>">
+                <label for="intro_slideBtnLink">Enlace Botón (URL)</label>
+                <input type="text" id="intro_slideBtnLink" name="intro_slideBtnLink" placeholder="URL" value="<?php echo $slideBtnLink; ?>">
             </th>
         </tr>
     </table>
 <?php }
 
-add_action( 'save_post', 'tmptnj_slider_save_metas', 10, 2 );
-function tmptnj_slider_save_metas( $idtmptnj_slider, $tmptnj_slider ){
-    if ( $tmptnj_slider->post_type == 'tmptnj_slider' ){
-        if ( isset( $_POST['tmptnj_slider_slideBtnText'] ) ){
-            update_post_meta( $idtmptnj_slider, 'tmptnj_slider_slideBtnText', $_POST['tmptnj_slider_slideBtnText'] );
+add_action( 'save_post', 'intro_save_metas', 10, 2 );
+function intro_save_metas( $idintro, $intro ){
+    if ( $intro->post_type == 'intro' ){
+        if ( isset( $_POST['intro_slideBtnText'] ) ){
+            update_post_meta( $idintro, 'intro_slideBtnText', $_POST['intro_slideBtnText'] );
         }
-        if ( isset( $_POST['tmptnj_slider_slideBtnLink'] ) ){
-            update_post_meta( $idtmptnj_slider, 'tmptnj_slider_slideBtnLink', $_POST['tmptnj_slider_slideBtnLink'] );
+        if ( isset( $_POST['intro_slideBtnLink'] ) ){
+            update_post_meta( $idintro, 'intro_slideBtnLink', $_POST['intro_slideBtnLink'] );
+        }
+    }
+}
+
+
+/* Imagen y texto (tmptnj-columnsimage) - servicios */
+add_action( 'add_meta_boxes', 'servicios_custom_metabox' );
+function servicios_custom_metabox(){
+    add_meta_box( 'servicios_meta', 'Detalles', 'display_servicios_atributos', 'servicios', 'advanced', 'default');
+}
+
+function display_servicios_atributos( $servicios ){
+    $resumen   = esc_html( get_post_meta( $servicios->ID, 'servicios_resumen', true ) );
+?>
+    <table class="tmptnj-custum-fields">
+        <tr>
+            <td>
+                <label for="servicios_resumen">Texto Botón</label>
+                <textarea id="servicios_resumen" name="servicios_resumen" rows="5"><?php echo $resumen; ?></textarea>
+            </td>
+        </tr>
+    </table>
+<?php }
+
+add_action( 'save_post', 'servicios_save_metas', 10, 2 );
+function servicios_save_metas( $idservicios, $servicios ){
+    if ( $servicios->post_type == 'servicios' ){
+        if ( isset( $_POST['servicios_resumen'] ) ){
+            update_post_meta( $idservicios, 'servicios_resumen', $_POST['servicios_resumen'] );
         }
     }
 }
