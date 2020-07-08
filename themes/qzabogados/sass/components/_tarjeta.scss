@@ -102,11 +102,15 @@
 			.tmptnj-tarjeta_redes {
 				background-color: $primary-color;
 				padding: 10px 0 15px;
-				a {
+				& > a {
 					display: inline-block;
 					margin: 0 3px;
 					font-size: 24px;
 					color: $light-color;
+				}
+				p {
+					font-size: 14px;
+					&, & a { color: $light-color; }
 				}
 			}
 	    }
@@ -242,7 +246,3 @@
 		&.rotate-180 em:before { margin-right: 1px; }
 	}
 }
-
-
-
-#wpadminbar { display: none!important; }

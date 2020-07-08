@@ -98,6 +98,7 @@
 	    margin-bottom: -100px;
 	    color: $light-color;
 	    text-align: center;
+  		font-family: $font-light;
 		@extend .fs-medium;
 	}
     .tmptnj-columnsImage_image .bg-image {
@@ -111,6 +112,7 @@
 .tmptnj-callToAction {
 	.tmptnj-callToAction_content {
 		color: $light-color;
+ 		font-family: $font-light;
 		@extend .fs-medium;
 	}
 	.tmptnj-callToAction_btn { text-align: center; }

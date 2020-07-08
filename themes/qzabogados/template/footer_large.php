@@ -11,6 +11,3 @@
 	<div class="wow slideInRight"><?php /* Form Mailchimp */
 	include (TEMPLATEPATH . '/template/mailchimp.php'); ?></div>	
 </div>
-<div class="col s12 text-center">
-	<p><small>© <?php echo date("Y"); ?> <a href="https://www.behance.net/nayelijord22e2" target="_blank">QZABOGADOS</a></small></p>
-</div>

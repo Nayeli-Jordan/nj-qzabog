@@ -40,9 +40,6 @@
 				<div class="bg-image wow slideInTop" style="background-image: url(<?php the_post_thumbnail_url('medium'); ?>)"></div>	
 				<h2><?php the_title(); ?></h2>
 				<p class="tmptnj-tarjeta_puesto uppercase"><?php echo $puesto; ?></p>
-				<!-- <a class="tmptnj-tarjeta_linkhome" href="<?php echo SITEURL; ?>" title="Incio QZ ABOGADOS">
-					<img src="<?php echo THEMEPATH; ?>images/tarjetas/logo.png" alt="Logo QZ ABOGADOS">
-				</a>	 -->			
 			</div>
 			<div class="tmptnj-tarjeta_description">
 				<div class="tmptnj-tarjeta_contacto container">
@@ -64,7 +61,7 @@
 					</a>
 					<a href="<?php echo SITEURL; ?>" alt="Sitio web QZ ABOGADOS" class="inline-block">
 						<div class="btn-hexagono btn-hexagono-borde">
-							<div class="hexagono"><div class="hexagono hexagono-small"></div><em class="icon-link"></em></div>
+							<div class="hexagono"><div class="hexagono hexagono-small"></div><em class="icon-globe"></em></div>
 						</div>
 					</a>
 				</div>
@@ -79,11 +76,12 @@
 					</div>
 				</div>
 				<div class="tmptnj-tarjeta_redes">
-					<div class="container">
+					<!-- <div class="container">
 						<a href="<?php echo $redlinkedin ?>" target="_blank" alt="Linkedin"><em class="icon-linkedin"></em></a>
 						<a href="<?php echo $redfacebook ?>" target="_blank" alt="Facebook"><em class="icon-facebook"></em></a>
 						<a href="<?php echo $redtwitter ?>" target="_blank" alt="Twitter"><em class="icon-twitter"></em></a>						
-					</div>
+					</div> -->
+					<p><small>© <?php echo date("Y"); ?> <a href="https://www.behance.net/nayelijord22e2" target="_blank">QZABOGADOS</a></small></p>
 				</div>
 			</div>
 		</div>
