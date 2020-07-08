@@ -1,5 +1,5 @@
 <!-- tmptnj-contact -->
-<section id="tmptnj-contacto" class="tmptnj-contact_form container margin-top-bottom-60">
+<section id="section-contacto" class="tmptnj-contact_form container margin-top-bottom-60">
 	<div class="row row-complete">
 		<div class="col s12 m6 offset-m3 wow slideInLeft">
 			<h4 class="text-center margin-bottom-20"><strong>Contáctanos</strong></h4>

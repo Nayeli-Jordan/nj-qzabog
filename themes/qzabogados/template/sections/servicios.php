@@ -1,8 +1,9 @@
 <!-- tmptnj-columnsimage -->
-<section class="tmptnj-columnsImage margin-bottom-40">
-	<div class="tmptnj-columnsImage_content bg-tertiary">
+<section id="section-servicios" class="tmptnj-columnsImage margin-bottom-40">
+	<div class="tmptnj-columnsImage_content bg-primary-dark">
 		<div class="container">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<h2 class="margin-bottom-20">Servicios</h2>
+			<p>Servicios en torno al ámbito administrativo del derecho federal, estatal y municipal, comprendiendo cuestiones de índole fiscal, aduanero, juicios de amparo, responsabilidades administrativas, protección al consumidor, administrativo, consultoría, etc.</p>
 		</div>
 	</div>		
 	<div class="container tmptnj-columnsImage_image overflow-hide ">			
@@ -10,6 +11,14 @@
 			<?php 
 			$columnsServicios_args = array(
 				'post_type' 		=> 'servicios',
+				'tax_query' 		=> array(
+					array(
+						'taxonomy'  => 'tipo',
+						'field' 	=> 'slug',
+						'terms' 	=> 'otro',
+						'operator' 	=> 'NOT IN',
+					)
+				),
 				'posts_per_page' 	=> 3,
 			);
 			$columnsServicios_query = new WP_Query( $columnsServicios_args );
@@ -22,9 +31,9 @@
 					<div class="col s12 m4 margin-bottom-20 wow fadeInUp slow">
 						<div class="bg-image margin-bottom-10 relative" style="background-image: url(<?php the_post_thumbnail_url('medium'); ?>)"><a href="<?php echo get_permalink(); ?>" class="bg-absolute"></a></div>
 						<a href="<?php echo get_permalink(); ?>"><h3 class="margin-bottom-10"><?php the_title(); ?></h3></a>
-						<p><?php echo $resumen; ?></p>
+						<p class="text-justify"><?php echo $resumen; ?></p>
 						<a href="<?php echo get_permalink(); ?>" class="inline-block float-right">
-							<div class="btn-hexagono btn-hexagono-relleno">
+							<div class="btn-hexagono btn-hexagono-small btn-hexagono-relleno">
 								<div class="hexagono"><em class="icon-right-open"></em></div>
 							</div>
 						</a>

@@ -7,20 +7,20 @@
 
 /* Buttons - Azul oscuro */
 $primary-color: 			#182a46 !default;
-$primary-color-light: 		lighten( $primary-color, 5% ) !default;
+$primary-color-light: 		lighten( $primary-color, 2% ) !default;
 $primary-color-dark: 		darken( $primary-color, 5% ) !default;
 
 $primary-color-gray: 		#5e5263 !default; /*Falta cambiarlo*/
 
 /* Bg principal - Azul claro */
 $secondary-color: 		#e9f5fc !default;
-$secondary-color-light: lighten( $secondary-color, 5% ) !default;
+$secondary-color-light: lighten( $secondary-color, 2% ) !default;
 $secondary-color-dark: 	darken( $secondary-color, 5% ) !default;
 
 /* Otros - Azules */ /*Falta cambiarlos todos hacia abajo*/
-$tertiary-color: 		#23415c !default;
-$tertiary-color-light:	#2288d8 !default; //Button callToAction
-$tertiary-color-dark: 	#004881 !default;
+$tertiary-color: 		#00265B !default;
+$tertiary-color-light:	lighten( $tertiary-color, 5% ) !default;; //Button callToAction
+$tertiary-color-dark: 	darken( $tertiary-color, 5% ) !default;
 
 $light-color: 			#fff !default;
 $dark-color: 			#1a1b1d !default;

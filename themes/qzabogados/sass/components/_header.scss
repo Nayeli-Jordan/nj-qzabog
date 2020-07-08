@@ -2,38 +2,65 @@ header {
     position: fixed;
     top: 0px;
     width: 100%;
-	padding: 5px 0 0;
-	background-color: $light-color;
+	padding: 8px 0 0;
+	background-color: $tertiary-color;
     z-index: 1000000000 !important;
-    box-shadow: 1px 1px 5px 0 rgba($secondary-color, 1);
+    box-shadow: 1px 1px 5px 0 rgba(0, 38, 91, 0.6);
+    @media #{$small-and-down} { padding: 8px 0 3px; }
 	.tmptnj-logo {
 		display: inline-block;
-		width: 150px;
-		height: 50px;	
+		height: 57px;
+		@media #{$small-and-down} { width: 70px; }
 	}
 	.tmptnj-nav {
-		width: calc(100% - 180px);
+		width: calc(100% - 90px);
 		float: right;
 		text-align: right;
+		margin-top: 10px;
+		@media #{$small-and-down} { margin-top: 10px; }
+		.tmptnj-nav-desktop {
+			display: inline-block;
+    		margin-right: 20px;
+    		@media #{$medium-and-down} { display: none; }
+			ul {
+				margin: 0px;
+				li {
+					display: inline-block;
+					margin: 0 5px;
+					a, p {
+						display: inline-block;
+						color: $light-color;
+						font-size: 18px;
+						line-height: 35px;
+						cursor: pointer;
+						&:hover { color: $secondary-color-light; }
+					}
+				}
+			}
+		}
 		.social-links {
 			display: inline-block;
 			vertical-align: middle;
-			margin-right: 15px;
+			margin-top: -3px;
+			@media #{$medium-and-down} { margin-right: 10px; }
 			a {
-				color: $primary-color;
+				color: $light-color;
 				@include transition(.3s ease-out);
 				em {
-					margin-right: 5px;
+					font-size: 22px;
 					cursor: pointer;
 				}
-				&:hover { color: $primary-color-dark; }			
+				&:hover { color: $secondary-color; }			
 			}
 		}
 		#open-nav {
-			color: $primary-color;
+			color: $light-color;
 			font-size: 24px;
     		vertical-align: middle;
 			cursor: pointer;
+			@media #{$large-and-up} {
+				display: none;
+			}
 		}
 		nav {
 			position: fixed;
@@ -110,11 +137,7 @@ header {
 	@media #{$sm-and-down}{
 		z-index: 99999 !important;
 	}
-	@media #{$sm-and-up}{
-		.tmptnj-logo { margin-bottom: -7px; }
-		.tmptnj-nav { margin-top: 16px; }
-	}
-	@media #{$small-and-down}{
+/*	@media #{$small-and-down}{
 		.tmptnj-logo {
 			display: block;
 			margin: auto;
@@ -150,5 +173,5 @@ header {
 				}
 			}	
 		}
-	}	
+	}	*/
 }

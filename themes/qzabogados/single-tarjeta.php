@@ -47,22 +47,22 @@
 			<div class="tmptnj-tarjeta_description">
 				<div class="tmptnj-tarjeta_contacto container">
 					<div class="tmptnj-tarjeta_contacto-line"></div>
-					<a href="tel:<?php echo $telefono ?>" title="Tel. <?php echo $telefono ?>" class="inline-block">
+					<a href="tel:<?php echo $telefono ?>" alt="Tel. <?php echo $telefono ?>" class="inline-block">
 						<div class="btn-hexagono btn-hexagono-relleno">
 							<div class="hexagono"><em class="icon-phone"></em></div>
 						</div>
 					</a>
-					<a href="https://wa.me/<?php echo $telefono ?>" title="Watsapp <?php echo $telefono ?>" class="inline-block">
+					<a href="https://wa.me/<?php echo $telefono ?>" alt="Watsapp <?php echo $telefono ?>" class="inline-block">
 						<div class="btn-hexagono btn-hexagono-relleno">
 							<div class="hexagono"><em class="icon-whatsapp"></em></div>
 						</div>
 					</a>
-					<a href="mailto:<?php echo $correo ?>" title="Correo <?php echo $correo ?>" class="inline-block">
+					<a href="mailto:<?php echo $correo ?>" alt="Correo <?php echo $correo ?>" class="inline-block">
 						<div class="btn-hexagono btn-hexagono-relleno">
 							<div class="hexagono"><em class="icon-mail-alt"></em></div>
 						</div>
 					</a>
-					<a href="<?php echo SITEURL; ?>" title="Sitio web QZ ABOGADOS" class="inline-block">
+					<a href="<?php echo SITEURL; ?>" alt="Sitio web QZ ABOGADOS" class="inline-block">
 						<div class="btn-hexagono btn-hexagono-borde">
 							<div class="hexagono"><div class="hexagono hexagono-small"></div><em class="icon-link"></em></div>
 						</div>
@@ -80,9 +80,9 @@
 				</div>
 				<div class="tmptnj-tarjeta_redes">
 					<div class="container">
-						<a href="<?php echo $redlinkedin ?>" target="_blank" title="Linkedin"><em class="icon-linkedin"></em></a>
-						<a href="<?php echo $redfacebook ?>" target="_blank" title="Facebook"><em class="icon-facebook"></em></a>
-						<a href="<?php echo $redtwitter ?>" target="_blank" title="Twitter"><em class="icon-twitter"></em></a>						
+						<a href="<?php echo $redlinkedin ?>" target="_blank" alt="Linkedin"><em class="icon-linkedin"></em></a>
+						<a href="<?php echo $redfacebook ?>" target="_blank" alt="Facebook"><em class="icon-facebook"></em></a>
+						<a href="<?php echo $redtwitter ?>" target="_blank" alt="Twitter"><em class="icon-twitter"></em></a>						
 					</div>
 				</div>
 			</div>

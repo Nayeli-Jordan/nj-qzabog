@@ -4,23 +4,10 @@
 		<div class="container">
 			<div class="text-center margin-bottom-20 max-width-600 margin-auto color-light">
 				<h2 class="margin-bottom-20">Clientes</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			</div>
-			<div class="row row-complete text-center">
-				<?php 
-				$logos_args = array(
-					'post_type' 		=> 'postLogos',
-					'posts_per_page' 	=> 12,
-				);
-				$logos_query = new WP_Query( $logos_args );
-				if ( $logos_query->have_posts() ) :
-					$i = 0;
-					while ( $logos_query->have_posts() ) : $logos_query->the_post(); ?>
-						<div class="tmptnj-logos_logo wow fadeIn delay-<?php echo $i ?>s slow">
-							<div class="bg-image bg-contain" style="background-image: url(<?php the_post_thumbnail_url('medium'); ?>)"></div>
-						</div>
-					<?php $i++; if ($i === 2) { $i = 0; } endwhile; wp_reset_postdata();
-				endif; ?>
+				<p></p>
+				Durante este tiempo, hemos sido distinguidos con el depósito de la confianza de un importante número de clientes, quienes nos han encomendado en todo momento defender sus intereses jurídicos legítimos a través de litigios y, prácticamente, han depositado en nuestras manos el futuro de sus negocios, saliendo airados, exitosos y con renovados bríos al término de éstos; asimismo, hemos logrado a través de la implementación y diseño de estrategias jurídicas serías y soportadas legalmente, la generación de beneficios fiscales y la obtención de recursos económicos frescos; igualmente, hemos impedido la materialización de problemas previsibles y hemos minimizado las posibilidades de que sufran afectaciones jurídicas serias, lo cual se ha logrado con la coordinación y oportuna intervención y asesoría legal requerida.
+
+				Estos beneficios y más, afortunadamente han sido palpados por prestigiadas y renombradas empresas nacionales (de las cuales por ética, respecto y secrecía profesional omitimos sus nombres) en ramos tales como la construcción, la farmacéutica, la comunicación, el desarrollo inmobiliario, la alimentación, el diseño, los servicios, etc. Asimismo y no menos importantes han sido las medianas y micro empresas y la personas físicas que a lo largo y ancho del territorio nacional hemos tenido la fortuna de atenderles con esmero, inspiración, humanismo, profesionalismo, ética y honradez, que es lo menos que podemos retribuirles.
 			</div>
 		</div>			
 	</div>

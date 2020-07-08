@@ -122,6 +122,8 @@
 }
 
 
+/*BTN HEXAGONAL*/
+
 .btn-hexagono {
 	position: relative;
 	display: inline-block;
@@ -221,6 +223,31 @@
 			color: $primary-color-dark; 
 
 		}
+	}
+	&.btn-hexagono-small {
+		width: 32px;
+		margin: 0px;
+		.hexagono { 
+			height: 18px;
+			margin: 10px 0;
+		}
+		.hexagono:before {
+			border-right-width: 16px;
+			border-left-width: 16px;
+			border-bottom-width: 10px;
+			top: -10px;
+		}
+		.hexagono:after {
+			border-right-width: 16px;
+			border-left-width: 16px;
+			border-top-width: 10px;
+			bottom: -10px;
+		}
+		em {
+		  	width: 32px;
+		  	line-height: 32px;
+		}
+		&.rotate-180 em:before { margin-right: 1px; }
 	}
 }
 

@@ -37,38 +37,6 @@ add_action('init', function(){
 	);
 	register_post_type( 'tmptnj_slider', $args );	
 
-	// tmptnj-columnsPost
-	$labels = array(
-		'name'          => 'Columns Post',
-		'singular_name' => 'Columns Post',
-		'add_new'       => 'Nuevo Post',
-		'add_new_item'  => 'Nuevo Post',
-		'edit_item'     => 'Editar Post',
-		'new_item'      => 'Nuevo Post',
-		'all_items'     => 'Columns Post',
-		'view_item'     => 'Ver Post',
-		'search_items'  => 'Buscar Post',
-		'not_found'     => 'No hay Post.',
-		'menu_name'     => 'Columns Post'
-	);
-
-	$args = array(
-		'labels'             => $labels,
-		'public'             => true,
-		'publicly_queryable' => true,
-		'show_ui'            => true,
-		'show_in_menu'       => 'edit.php?post_type=page',
-		'query_var'          => true,
-		'rewrite'            => array( 'slug' => 'postColumnsPost' ),
-		'capability_type'    => 'post',
-		'has_archive'        => true,
-		'hierarchical'       => false,
-		'menu_position'      => 6,
-		'supports'           => array( 'title', 'editor', 'thumbnail' ),
-		//'menu_icon' 		 => 'dashicons-admin-users'
-	);
-	register_post_type( 'postColumnsPost', $args );
-
 	// tmptnj-columnsImage
 	$labels = array(
 		'name'          => 'Columns Image',
@@ -234,6 +202,38 @@ add_action('init', function(){
 		//'menu_icon' 		 => 'dashicons-admin-users'
 	);
 	register_post_type( 'intro', $args );	
+
+	// Nosotros
+	$labels = array(
+		'name'          => 'Nosotros',
+		'singular_name' => 'Nosotros',
+		'add_new'       => 'Nuevo Nosotros',
+		'add_new_item'  => 'Nuevo Nosotros',
+		'edit_item'     => 'Editar Nosotros',
+		'new_item'      => 'Nuevo Nosotros',
+		'all_items'     => 'Nosotros',
+		'view_item'     => 'Ver Nosotros',
+		'search_items'  => 'Buscar Nosotros',
+		'not_found'     => 'No hay Nosotros.',
+		'menu_name'     => 'Nosotros'
+	);
+
+	$args = array(
+		'labels'             => $labels,
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => 'edit.php?post_type=page',
+		'query_var'          => true,
+		'rewrite'            => array( 'slug' => 'nosotros' ),
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+		'hierarchical'       => false,
+		'menu_position'      => 6,
+		'supports'           => array( 'title', 'editor', 'thumbnail' ),
+		//'menu_icon' 		 => 'dashicons-admin-users'
+	);
+	register_post_type( 'nosotros', $args );
 
 	// Servicios
 	$labels = array(

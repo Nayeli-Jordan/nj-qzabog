@@ -13,7 +13,7 @@ define( 'SITEURL', get_site_url() . '/' );
 \*------------------------------------*/
 require_once( 'inc/pages.php' );
 require_once( 'inc/post-types.php' );
-/*require_once( 'inc/taxonomies.php' );*/
+require_once( 'inc/taxonomies.php' );
 
 /*------------------------------------*\
 	#GENERAL FUNCTIONS
@@ -63,7 +63,6 @@ add_theme_support( 'post-thumbnails' );
 add_action('after_setup_theme', 'add_top_menu');
 function add_top_menu(){
 	register_nav_menu('top_menu',__('Top menu'));
-	register_nav_menu('footer_menu',__('Footer menu'));
 }
 
 //Delimitar número palabras excerpt

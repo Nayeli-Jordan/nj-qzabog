@@ -44,6 +44,25 @@ var $=jQuery.noConflict();
 
 		// } 
 
+		$(".item-scroll").click(function() {
+			console.log('init');
+			var idLink = $(this).attr('id');
+			var sectionID = $('#section-'+idLink);
+			$('html, body').animate({
+	            scrollTop: sectionID.offset().top -100
+	        }, 600);
+
+		    /*if ( sectionID == 'initial' ){
+		        $('html, body').animate({
+		            scrollTop: sectionID.offset().top
+		        }, 600);
+		    } else {
+		        $('html, body').animate({
+		            scrollTop: sectionID.offset().top -300
+		        }, 600);
+		    }*/
+		});
+
 		// Nav Mobile
 		$("#open-nav").click(function() {
 			$('.js-header nav').addClass('open');
@@ -108,4 +127,37 @@ function imageMasonry(){
 	$grid.imagesLoaded().progress( function() {
 		$grid.packery();
 	}); 
+}
+
+
+
+
+
+
+
+
+
+
+//Scroll to section
+function scrollToSection(clickedElement){
+    var item = clickedElement;
+            //elemento al que se le da clic (<a href="#our_process" class="item [ estilos ]" data-section="our_process" itemprop="actionOption">Our process</a>)
+    var sectionName = clickedElement.data('section');
+            //Obtener el nombre de la seccion a la que debe ir esta ancla (data-section="our_process",  data-section="about_us, etc.")
+    var sectionID = $('#'+sectionName);
+            //Guardar el nombre de la sección como id
+
+    $('.item').removeClass('active');
+            //Remueve la clase activa (si es que está función ya corrio anteriormente, sino no hace nada)
+
+    if ( sectionID == 'initial' ){
+        $('html, body').animate({
+            scrollTop: sectionID.offset().top
+        }, 600);
+    } else {
+        $('html, body').animate({
+            scrollTop: sectionID.offset().top -300
+        }, 600);
+    }
+    item.addClass('active');
 }

@@ -13,7 +13,7 @@
 				$post_id        = get_the_ID();
 				$slideBtnText   = get_post_meta( $post_id, 'tmptnj_slider_slideBtnText', true );
     			$slideBtnLink   = get_post_meta( $post_id, 'tmptnj_slider_slideBtnLink', true ); ?>
-				<div class="tmptnj-slider_slide" style="background-image: url(<?php the_post_thumbnail_url('large'); ?>)">
+				<div class="tmptnj-slider_slide" style="background-image: url(<?php the_post_thumbnail_url('full'); ?>)">
 					<div class="tmptnj-slider_opacity"></div>
 					<div class="container relative">
 						<div class="tmptnj-slider_content">
