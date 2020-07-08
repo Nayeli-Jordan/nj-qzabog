@@ -16,7 +16,6 @@
 					<div class="bg-image margin-bottom-20 wow slideInLeft" style="background-image: url(<?php the_post_thumbnail_url('large'); ?>)"></div>					
 				</div>
 				<div class="col s12 l10 offset-l1 margin-bottom-50">
-
 					<div class="text-justify wow fadeIn"><?php the_content(); ?></div>
 					<a href="<?php echo SITEURL; ?>" class="inline-block float-right margin-top-15">
 						<div class="btn-hexagono btn-hexagono-small btn-hexagono-relleno rotate-180 inline-block align-middle">

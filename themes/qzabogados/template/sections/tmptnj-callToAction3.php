@@ -12,3 +12,4 @@
 		</div>			
 	</div>
 </section>
+<div class="triangleBottomRight bg-primary"></div>

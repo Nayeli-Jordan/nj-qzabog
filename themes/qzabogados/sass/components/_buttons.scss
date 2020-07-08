@@ -45,9 +45,9 @@ input[type="submit"] {
 }
 .tmptnj-callToAction_btn .btn { 
 	color: $primary-color;
-	background-color: $secondary-color;
+	background-color: $light-color;
 	em { border-left: 1px solid rgba(24, 42, 70, 0.4); }
-	&:hover { background-color: $secondary-color-light; }
+	&:hover { background-color: $secondary-color; }
 }
 
 .enlaceBtn {

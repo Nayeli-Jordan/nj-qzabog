@@ -1,7 +1,7 @@
 header {
     position: fixed;
     top: 0px;
-    width: 100%;
+    width: 100vw;
 	padding: 8px 0 0;
 	background-color: $tertiary-color;
     z-index: 1000000000 !important;
@@ -17,7 +17,7 @@ header {
 		float: right;
 		text-align: right;
 		margin-top: 10px;
-		@media #{$small-and-down} { margin-top: 10px; }
+		@media #{$small-and-down} { margin-top: 12px; }
 		.tmptnj-nav-desktop {
 			display: inline-block;
     		margin-right: 20px;
