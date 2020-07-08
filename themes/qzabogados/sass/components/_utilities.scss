@@ -250,3 +250,26 @@
 		padding-bottom: calc(70%);
 	}
 }
+
+#tmptnj-mantenimiento {
+	text-align: center;
+	.bg-image {
+		padding-bottom: 25%;
+		margin-bottom: 20px;
+		@media #{$large-and-down} { padding-bottom: 30%; }
+		@media #{$medium-and-down} { padding-bottom: 40%; }
+		@media #{$sm-and-down} { padding-bottom: 50%; }
+		.bg-absolute { background-color: rgba(255,255,255,0.3); }
+		h2 { 
+			color: #fff;
+			font-size: 40px;
+			@include center-full(); 
+			@media #{$sm-and-down} {
+				font-size: 20px;
+			}
+		}
+	}
+	.tmptnj-mantenimiento_content {
+		text-align: center;
+	}
+}
