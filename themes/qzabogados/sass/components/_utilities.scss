@@ -33,19 +33,19 @@
 .tmptnj-slider {
 	.tmptnj-slider_slide {
 		width: 100%;
-		height: 450px;
+		height: 460px;
 		@extend .bg-image;
-		@media #{$large-and-up} 		{ height: 380px; }
+		@media #{$large-and-up} 		{ height: 400px; }
 		/*@media #{$extra-large-and-up} 	{ height: 600px; }*/
 		.tmptnj-slider_opacity {
-			/*background-color: rgba(255,255,255, 0.3);*/
-			background: rgba(255,255,255,1);
-			background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(237,237,237,0.4) 60%, rgba(237,237,237,0.2) 100%);
-			background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(60%, rgba(237,237,237,0.4)), color-stop(100%, rgba(237,237,237,0.2)));
-			background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(237,237,237,0.4) 60%, rgba(237,237,237,0.2) 100%);
-			background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(237,237,237,0.4) 60%, rgba(237,237,237,0.2) 100%);
-			background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(237,237,237,0.4) 60%, rgba(237,237,237,0.2) 100%);
-			background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(237,237,237,0.4) 60%, rgba(237,237,237,0.2) 100%);
+			/*background-color: rgba(0,0,0, 0.3);*/
+			background: rgba(0,0,0,1);
+			background: -moz-linear-gradient(left, rgba(35,35,35,0.55) 0%, rgba(0,0,0,0.15) 50%, rgba(0,0,0,0) 100%);
+			background: -webkit-gradient(left top, right top, color-stop(0%, rgba(35,35,35,0.55)), color-stop(50%, rgba(0,0,0,0.15)), color-stop(100%, rgba(0,0,0,0)));
+			background: -webkit-linear-gradient(left, rgba(35,35,35,0.55) 0%, rgba(0,0,0,0.15) 50%, rgba(0,0,0,0) 100%);
+			background: -o-linear-gradient(left, rgba(35,35,35,0.55) 0%, rgba(0,0,0,0.15) 50%, rgba(0,0,0,0) 100%);
+			background: -ms-linear-gradient(left, rgba(35,35,35,0.55) 0%, rgba(0,0,0,0.15) 50%, rgba(0,0,0,0) 100%);
+			background: linear-gradient(to right, rgba(35,35,35,0.55) 0%, rgba(0,0,0,0.15) 50%, rgba(0,0,0,0) 100%);
 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
 			position: absolute;
 			top: 0px; bottom: 0px;
@@ -57,7 +57,9 @@
 			padding-top: 60px;
 			padding-bottom: 60px;
 			.tmptnj-slider_content {
-				max-width: 500px;
+				max-width: 380px;
+				color: $light-color;
+				h2 { line-height: 36px; }
 			}			
 		}
 	}
@@ -75,7 +77,7 @@
 			cursor: pointer;
 			color: gray;
 			&.cycle-pager-active {
-				color: $primary-color;
+				color: $secondary-color;
 			}
 		}
 		&.cycle-pager_left {

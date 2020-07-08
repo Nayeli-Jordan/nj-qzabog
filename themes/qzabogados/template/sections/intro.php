@@ -1,6 +1,6 @@
 <!-- tmptnj-slider -->
 <section class="tmptnj-slider">
-	<div class="cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-pause-on-hover="true" data-cycle-speed="200" data-cycle-slides="> div">
+	<div class="cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-pause-on-hover="true" data-cycle-speed="600" data-cycle-slides="> div">
 		<?php 
 		$intro_args = array(
 			'post_type' 		=> 'intro',
