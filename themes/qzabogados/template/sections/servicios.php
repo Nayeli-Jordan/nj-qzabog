@@ -32,7 +32,7 @@
 						<div class="bg-image margin-bottom-10 relative" style="background-image: url(<?php the_post_thumbnail_url('medium'); ?>)"><a href="<?php echo get_permalink(); ?>" class="bg-absolute"></a></div>
 						<a href="<?php echo get_permalink(); ?>"><h3 class="margin-bottom-10"><?php the_title(); ?></h3></a>
 						<p class="text-justify"><?php echo $resumen; ?></p>
-						<a href="<?php echo get_permalink(); ?>" class="inline-block float-right">
+						<a href="<?php echo get_permalink(); ?>" class="inline-block float-right margin-top-10">
 							<div class="btn-hexagono btn-hexagono-small btn-hexagono-relleno">
 								<div class="hexagono"><em class="icon-right-open"></em></div>
 							</div>

@@ -13649,9 +13649,10 @@ footer #mc_embed_signup form input#mc-embedded-subscribe {
 /* line 242, ../sass/components/_tarjeta.scss */
 .btn-hexagono.btn-hexagono-small em {
   width: 32px;
+  font-size: 18px;
   line-height: 32px;
 }
-/* line 246, ../sass/components/_tarjeta.scss */
+/* line 247, ../sass/components/_tarjeta.scss */
 .btn-hexagono.btn-hexagono-small.rotate-180 em:before {
   margin-right: 1px;
 }

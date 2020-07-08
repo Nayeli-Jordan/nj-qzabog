@@ -18,8 +18,8 @@
 				<div class="col s12 l10 offset-l1 margin-bottom-50">
 					<div class="text-justify wow fadeIn"><?php the_content(); ?></div>
 					<a href="<?php echo SITEURL; ?>" class="inline-block float-right margin-top-15">
-						<div class="btn-hexagono btn-hexagono-small btn-hexagono-relleno rotate-180 inline-block align-middle">
-							<div class="hexagono"><em class="icon-right-open"></em></div>
+						<div class="btn-hexagono btn-hexagono-small btn-hexagono-relleno inline-block align-middle">
+							<div class="hexagono"><em class="icon-home"></em></div>
 						</div>
 						<span class="inline-block align-middle"> Ir a Inicio</span>
 					</a>	
