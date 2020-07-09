@@ -10,6 +10,7 @@
 	$puesto   		= get_post_meta( $post_id, 'tarjeta_puesto', true );
     $correo   		= get_post_meta( $post_id, 'tarjeta_correo', true );
     $telefono   	= get_post_meta( $post_id, 'tarjeta_telefono', true );
+    $whatsapp   	= get_post_meta( $post_id, 'tarjeta_whatsapp', true );
     $ubicacion  	= get_post_meta( $post_id, 'tarjeta_ubicacion', true );
     $direccion  	= get_post_meta( $post_id, 'tarjeta_direccion', true );
     $redlinkedin 	= get_post_meta( $post_id, 'tarjeta_redlinkedin', true );
@@ -44,21 +45,28 @@
 			<div class="tmptnj-tarjeta_description">
 				<div class="tmptnj-tarjeta_contacto container">
 					<div class="tmptnj-tarjeta_contacto-line"></div>
-					<a href="tel:<?php echo $telefono ?>" alt="Tel. <?php echo $telefono ?>" class="inline-block">
-						<div class="btn-hexagono btn-hexagono-relleno">
-							<div class="hexagono"><em class="icon-phone"></em></div>
-						</div>
-					</a>
-					<a href="https://wa.me/<?php echo $telefono ?>" alt="Watsapp <?php echo $telefono ?>" class="inline-block">
-						<div class="btn-hexagono btn-hexagono-relleno">
-							<div class="hexagono"><em class="icon-whatsapp"></em></div>
-						</div>
-					</a>
+					<?php if ($telefono != '') { ?>
+						<a href="tel:<?php echo $telefono ?>" alt="Tel. <?php echo $telefono ?>" class="inline-block">
+							<div class="btn-hexagono btn-hexagono-relleno">
+								<div class="hexagono"><em class="icon-phone"></em></div>
+							</div>
+						</a>
+					<?php } 
+					if ($whatsapp != '') { ?>
+						<a href="https://wa.me/<?php echo $whatsapp ?>" alt="Whatsapp <?php echo $whatsapp ?>" class="inline-block">
+							<div class="btn-hexagono btn-hexagono-relleno">
+								<div class="hexagono"><em class="icon-whatsapp"></em></div>
+							</div>
+						</a>
+
+					<?php } 
+					if ($correo != '') { ?>
 					<a href="mailto:<?php echo $correo ?>" alt="Correo <?php echo $correo ?>" class="inline-block">
 						<div class="btn-hexagono btn-hexagono-relleno">
 							<div class="hexagono"><em class="icon-mail-alt"></em></div>
 						</div>
 					</a>
+					<?php } ?>
 					<a href="<?php echo SITEURL; ?>" alt="Sitio web QZ ABOGADOS" class="inline-block">
 						<div class="btn-hexagono btn-hexagono-borde">
 							<div class="hexagono"><div class="hexagono hexagono-small"></div><em class="icon-globe"></em></div>

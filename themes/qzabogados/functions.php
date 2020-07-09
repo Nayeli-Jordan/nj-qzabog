@@ -197,6 +197,7 @@ function display_tarjeta_atributos( $tarjeta ){
     $puesto     = esc_html( get_post_meta( $tarjeta->ID, 'tarjeta_puesto', true ) );
     $correo     = esc_html( get_post_meta( $tarjeta->ID, 'tarjeta_correo', true ) );
     $telefono   = esc_html( get_post_meta( $tarjeta->ID, 'tarjeta_telefono', true ) );
+    $whatsapp   = esc_html( get_post_meta( $tarjeta->ID, 'tarjeta_whatsapp', true ) );
     $ubicacion   = esc_html( get_post_meta( $tarjeta->ID, 'tarjeta_ubicacion', true ) );
     $direccion  = esc_html( get_post_meta( $tarjeta->ID, 'tarjeta_direccion', true ) );
     $redlinkedin = esc_html( get_post_meta( $tarjeta->ID, 'tarjeta_redlinkedin', true ) );
@@ -221,6 +222,12 @@ function display_tarjeta_atributos( $tarjeta ){
             <td><label for="tarjeta_telefono">Telefono</label></td>
             <td>
                 <input type="tel" id="tarjeta_telefono" name="tarjeta_telefono" placeholder="5555555555" value="<?php echo $telefono; ?>">
+            </td>
+        </tr>
+        <tr>
+            <td><label for="tarjeta_whatsapp">Whatsapp</label></td>
+            <td>
+                <input type="tel" id="tarjeta_whatsapp" name="tarjeta_whatsapp" placeholder="5555555555" value="<?php echo $whatsapp; ?>">
             </td>
         </tr>
         <tr>
@@ -262,6 +269,9 @@ function tarjeta_save_metas( $idtarjeta, $tarjeta ){
         }
         if ( isset( $_POST['tarjeta_telefono'] ) ){
             update_post_meta( $idtarjeta, 'tarjeta_telefono', $_POST['tarjeta_telefono'] );
+        }
+        if ( isset( $_POST['tarjeta_whatsapp'] ) ){
+            update_post_meta( $idtarjeta, 'tarjeta_whatsapp', $_POST['tarjeta_whatsapp'] );
         }
         if ( isset( $_POST['tarjeta_ubicacion'] ) ){
             update_post_meta( $idtarjeta, 'tarjeta_ubicacion', $_POST['tarjeta_ubicacion'] );
