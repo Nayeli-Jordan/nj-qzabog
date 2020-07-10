@@ -7,7 +7,7 @@
 		@include shadow;
 	}
 	.tmptnj-tarjeta_header {
-	    padding-bottom: 50%;
+	    padding-bottom: 55%;
 	    //background-position: top center;
 	    .bg-absolute {
 	    	background-color: rgba(255,255,255,0.3);
@@ -33,14 +33,14 @@
 		}
 	}
     .tmptnj-tarjeta_content {
-    	margin-top: -110px;
+    	margin-top: -95px;
 	    text-align: center;
     	.tmptnj-tarjeta_cabecera {
 	    	.bg-image {
 	    		width: 180px;
 			    height: 180px;
 			    border-radius: 50%;
-			    margin: 0px auto 15px;
+			    margin: 0px auto 30px;
 			}
 			h2 {
 				text-transform: uppercase;
@@ -53,11 +53,11 @@
     	}
 	    .tmptnj-tarjeta_description {
 			background-color: $secondary-color;
-			margin-top: 15px;
-			padding: 35px 0 0;
+			margin-top: 30px;
+			padding: 40px 0 0;
 			.tmptnj-tarjeta_contacto {
 				position: relative;
-				margin-bottom: 20px;
+				margin-bottom: 30px;
 				.tmptnj-tarjeta_contacto-line {
 					width: 180px;
 					height: 4px;
@@ -67,7 +67,7 @@
 				}
 			}
 			.tmptnj-tarjeta_ubicacion {
-				padding-bottom: 30px;
+				padding-bottom: 35px;
 				#tmptnj-tarjeta_btnubicacion {
 					width: 95%;
 				    margin: auto;
@@ -101,7 +101,7 @@
 			}
 			.tmptnj-tarjeta_redes {
 				background-color: $primary-color;
-				padding: 10px 0 15px;
+				padding: 15px 0;
 				& > a {
 					display: inline-block;
 					margin: 0 3px;

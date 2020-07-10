@@ -21,10 +21,10 @@
 		<meta property="og:title" content="<?php bloginfo('name'); ?>" />
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="<?php echo site_url(); ?>" />
-		<meta property="og:image" content="<?php echo THEMEPATH; ?>images/share.png">
+		<meta property="og:image" content="<?php echo THEMEPATH; ?>images/share.jpg">
 		<meta property="og:description" content="<?php bloginfo('description'); ?>" />
 		<meta name="twitter:description" content="<?php bloginfo('description'); ?>" />
-		<meta name="twitter:image" content="<?php echo THEMEPATH; ?>images/share.png" />
+		<meta name="twitter:image" content="<?php echo THEMEPATH; ?>images/share.jpg" />
 		<meta name="twitter:title" content="<?php bloginfo('name'); ?>" />
 		<meta property="og:image:width" content="210" />
 		<meta property="og:image:height" content="110" />

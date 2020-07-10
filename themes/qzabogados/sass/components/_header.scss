@@ -4,7 +4,7 @@ header {
     width: 100vw;
 	padding: 8px 0 0;
 	background-color: $tertiary-color;
-    z-index: 1000000000 !important;
+    z-index: 10000 !important;
     box-shadow: 1px 1px 5px 0 rgba(0, 38, 91, 0.6);
     @media #{$small-and-down} { padding: 8px 0 3px; }
 	.tmptnj-logo {

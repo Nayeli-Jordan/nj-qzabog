@@ -56,6 +56,35 @@ function load_custom_files_wp_admin() {
 }
 add_action( 'admin_enqueue_scripts', 'load_custom_files_wp_admin' );
 
+//Change style login
+function my_login_logo() { ?>
+  <style type="text/css">
+    body { background-color: #fff!important; }
+    input#wp-submit { background-color: #182a46!important; }
+    input#wp-submit:hover { background-color: #233d67!important; }
+    #login h1 a, .login h1 a {
+        background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/share.jpg);
+        width: 100px;
+        height: 100px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .login label, .login #backtoblog a, .login #nav a { color: #23282d!important; }
+  </style>
+<?php }//end my_login_logo()
+add_action( 'login_enqueue_scripts', 'my_login_logo' );
+
+function my_login_logo_url() {
+  return home_url();
+}//end my_login_logo_url()
+add_filter( 'login_headerurl', 'my_login_logo_url' );
+
+function my_login_logo_url_title() {
+  return 'QZ ABOGADOS';
+}//end my_login_logo_url_title()
+add_filter( 'login_headertitle', 'my_login_logo_url_title' );
+
+
 //Habilitar thumbnail en post
 add_theme_support( 'post-thumbnails' ); 
 

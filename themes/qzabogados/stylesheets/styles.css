@@ -13080,7 +13080,7 @@ header {
   width: 100vw;
   padding: 8px 0 0;
   background-color: #00265B;
-  z-index: 1000000000 !important;
+  z-index: 10000 !important;
   box-shadow: 1px 1px 5px 0 rgba(0, 38, 91, 0.6);
   /*	@media only screen and (max-width : 430px){
   		.tmptnj-logo {
@@ -13389,7 +13389,7 @@ footer #mc_embed_signup form input#mc-embedded-subscribe {
 }
 /* line 9, ../sass/components/_tarjeta.scss */
 #tmptnj-tarjeta .tmptnj-tarjeta_header {
-  padding-bottom: 50%;
+  padding-bottom: 55%;
 }
 /* line 12, ../sass/components/_tarjeta.scss */
 #tmptnj-tarjeta .tmptnj-tarjeta_header .bg-absolute, #tmptnj-tarjeta .tmptnj-tarjeta_header .modal .exit-modal, .modal #tmptnj-tarjeta .tmptnj-tarjeta_header .exit-modal {
@@ -13421,7 +13421,7 @@ footer #mc_embed_signup form input#mc-embedded-subscribe {
 }
 /* line 35, ../sass/components/_tarjeta.scss */
 #tmptnj-tarjeta .tmptnj-tarjeta_content {
-  margin-top: -110px;
+  margin-top: -95px;
   text-align: center;
 }
 /* line 39, ../sass/components/_tarjeta.scss */
@@ -13429,7 +13429,7 @@ footer #mc_embed_signup form input#mc-embedded-subscribe {
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  margin: 0px auto 15px;
+  margin: 0px auto 30px;
 }
 /* line 45, ../sass/components/_tarjeta.scss */
 #tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_cabecera h2 {
@@ -13444,13 +13444,13 @@ footer #mc_embed_signup form input#mc-embedded-subscribe {
 /* line 54, ../sass/components/_tarjeta.scss */
 #tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_description {
   background-color: #e9f5fc;
-  margin-top: 15px;
-  padding: 35px 0 0;
+  margin-top: 30px;
+  padding: 40px 0 0;
 }
 /* line 58, ../sass/components/_tarjeta.scss */
 #tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_description .tmptnj-tarjeta_contacto {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 /* line 61, ../sass/components/_tarjeta.scss */
 #tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_description .tmptnj-tarjeta_contacto .tmptnj-tarjeta_contacto-line {
@@ -13468,7 +13468,7 @@ footer #mc_embed_signup form input#mc-embedded-subscribe {
 }
 /* line 69, ../sass/components/_tarjeta.scss */
 #tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_description .tmptnj-tarjeta_ubicacion {
-  padding-bottom: 30px;
+  padding-bottom: 35px;
 }
 /* line 71, ../sass/components/_tarjeta.scss */
 #tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_description .tmptnj-tarjeta_ubicacion #tmptnj-tarjeta_btnubicacion {
@@ -13520,7 +13520,7 @@ footer #mc_embed_signup form input#mc-embedded-subscribe {
 /* line 102, ../sass/components/_tarjeta.scss */
 #tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_description .tmptnj-tarjeta_redes {
   background-color: #182a46;
-  padding: 10px 0 15px;
+  padding: 15px 0;
 }
 /* line 105, ../sass/components/_tarjeta.scss */
 #tmptnj-tarjeta .tmptnj-tarjeta_content .tmptnj-tarjeta_description .tmptnj-tarjeta_redes > a {
