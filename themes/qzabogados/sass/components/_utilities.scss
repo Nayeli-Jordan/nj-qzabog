@@ -98,10 +98,10 @@
 	.tmptnj-columnsImage_content {
 	    padding: 50px 0 150px;
 	    margin-bottom: -100px;
-	    color: $light-color;
 	    text-align: center;
   		font-family: $font-light;
 		@extend .fs-medium;
+		&:not(.color-dark){ color: $light-color; }
 	}
     .tmptnj-columnsImage_image .bg-image {
     	padding-bottom: calc(100%);

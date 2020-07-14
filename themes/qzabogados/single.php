@@ -5,7 +5,7 @@
 	while ( have_posts() ) : the_post(); 
 ?>
 	<section id="tmptnj-single">
-		<div class="tmptnj-single_content  bg-primary-dark">
+		<div class="tmptnj-single_content  bg-primary">
 			<div class="container">
 				<h2 class="wow fadeIn"><?php the_title(); ?></h2>
 			</div>

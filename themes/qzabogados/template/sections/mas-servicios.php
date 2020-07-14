@@ -1,4 +1,4 @@
-<section id="nosotros" class="container tmptnj-columnsPost margin-top-bottom-60">
+<section id="nosotros" class="container tmptnj-columnsPost margin-top-bottom-30">
 	<div class="row">
 		<div class="col s12 l10 offset-l1 text-center margin-bottom-20">
 			<h3 class="margin-bottom-20">Alianzas</h3>

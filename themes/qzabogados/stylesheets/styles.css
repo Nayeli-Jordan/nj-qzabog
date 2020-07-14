@@ -12819,9 +12819,12 @@ small {
 .tmptnj-columnsImage .tmptnj-columnsImage_content {
   padding: 50px 0 150px;
   margin-bottom: -100px;
-  color: #fff;
   text-align: center;
   font-family: "futura_light", sans-serif;
+}
+/* line 104, ../sass/components/_utilities.scss */
+.tmptnj-columnsImage .tmptnj-columnsImage_content:not(.color-dark) {
+  color: #fff;
 }
 /* line 106, ../sass/components/_utilities.scss */
 .tmptnj-columnsImage .tmptnj-columnsImage_image .bg-image, .tmptnj-columnsImage .tmptnj-columnsImage_image .tmptnj-slider .tmptnj-slider_slide, .tmptnj-slider .tmptnj-columnsImage .tmptnj-columnsImage_image .tmptnj-slider_slide {
@@ -13079,9 +13082,9 @@ header {
   top: 0px;
   width: 100vw;
   padding: 8px 0 0;
-  background-color: #00265B;
+  background-color: #182a46;
   z-index: 10000 !important;
-  box-shadow: 1px 1px 5px 0 rgba(0, 38, 91, 0.6);
+  box-shadow: 3px 3px 5px 0 rgba(53, 53, 53, 0.4);
   /*	@media only screen and (max-width : 430px){
   		.tmptnj-logo {
   			display: block;

@@ -1,9 +1,9 @@
 <!-- tmptnj-columnsimage -->
 <section id="section-servicios" class="tmptnj-columnsImage margin-bottom-40">
-	<div class="tmptnj-columnsImage_content bg-primary-dark">
+	<div class="tmptnj-columnsImage_content bg-secondary color-dark">
 		<div class="container">
 			<h2 class="margin-bottom-20">Servicios</h2>
-			<p>Servicios en torno al ámbito administrativo del derecho federal, estatal y municipal, comprendiendo cuestiones de índole fiscal, aduanero, juicios de amparo, responsabilidades administrativas, protección al consumidor, administrativo, consultoría, etc.</p>
+			<p>Otorgamos los mas altos y ambiciosos estándares posibles; siempre con todo el esmero, preparación, profesionalismo, ética y atención profesional requeridos. Servicios en torno al ámbito administrativo del derecho federal, estatal y municipal, comprendiendo cuestiones de índole fiscal, aduanero, juicios de amparo, responsabilidades administrativas, protección al consumidor, administrativo, consultoría, etc.</p>
 		</div>
 	</div>		
 	<div class="container tmptnj-columnsImage_image overflow-hide ">			
