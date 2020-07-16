@@ -1,8 +1,15 @@
+<?php 
+$page_id = 79;
+$post_id = get_post($page_id);
+$content = $post_id->post_content;
+$content = apply_filters('the_content', $content);
+$content = str_replace(']]>', ']]>', $content);
+?>
 <section id="nosotros" class="container tmptnj-columnsPost margin-top-bottom-30">
 	<div class="row">
 		<div class="col s12 l10 offset-l1 text-center margin-bottom-20">
-			<h3 class="margin-bottom-20">Alianzas</h3>
-			<p>Nuestras alianzas con otras importantes firmas profesionales nos permiten ofrecer servicios en diversas áreas juridicas. Por lo cual, también contamos con especialistas en el área laboral, litigio civil, mercantil, etc.</p>			
+			<h3 class="margin-bottom-20"><?php echo get_the_title($page_id); ?></h3>
+			<p><?php echo $content; ?></p>			
 		</div>		
 	</div>
 	<div class="row row-complete">

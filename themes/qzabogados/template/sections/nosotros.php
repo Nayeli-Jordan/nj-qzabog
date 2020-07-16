@@ -1,8 +1,15 @@
+<?php 
+$page_id = 74;
+$post_id = get_post($page_id);
+$content = $post_id->post_content;
+$content = apply_filters('the_content', $content);
+$content = str_replace(']]>', ']]>', $content);
+?>
 <section id="section-nosotros" class="container tmptnj-columnsPost margin-top-bottom-60">
 	<div class="row">
 		<div class="col s12 l10 offset-l1 text-center margin-bottom-20">
-			<h2 class="margin-bottom-20">Sobre nosotros</h2>
-			<p>Nuestro dinamismo se ha traducido en un vigoroso ímpetu y en una inercia favorable que nos permite atender satisfactoriamente a nuestros clientes aplicando todo nuestro conocimiento y esfuerzo en forma conjunta con las más innovadoras tecnologías</p>			
+			<h2 class="margin-bottom-20"><?php echo get_the_title($page_id); ?></h2>
+			<p><?php echo $content; ?></p>			
 		</div>		
 	</div>
 	<div class="row row-complete">

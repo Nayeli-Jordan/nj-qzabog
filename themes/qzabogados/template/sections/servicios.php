@@ -1,9 +1,16 @@
+<?php 
+$page_id = 74;
+$post_id = get_post($page_id);
+$content = $post_id->post_content;
+$content = apply_filters('the_content', $content);
+$content = str_replace(']]>', ']]>', $content);
+?>
 <!-- tmptnj-columnsimage -->
 <section id="section-servicios" class="tmptnj-columnsImage margin-bottom-40">
 	<div class="tmptnj-columnsImage_content bg-secondary color-dark">
 		<div class="container">
-			<h2 class="margin-bottom-20">Servicios</h2>
-			<p>Otorgamos los mas altos y ambiciosos estándares posibles; siempre con todo el esmero, preparación, profesionalismo, ética y atención profesional requeridos. Servicios en torno al ámbito administrativo del derecho federal, estatal y municipal, comprendiendo cuestiones de índole fiscal, aduanero, juicios de amparo, responsabilidades administrativas, protección al consumidor, administrativo, consultoría, etc.</p>
+			<h2 class="margin-bottom-20"><?php echo get_the_title($page_id); ?></h2>
+			<p><?php echo $content; ?></p>
 		</div>
 	</div>		
 	<div class="container tmptnj-columnsImage_image overflow-hide ">			

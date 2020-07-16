@@ -12996,64 +12996,70 @@ small {
 #tmptnj-single .tmptnj-single_post p {
   margin-bottom: 15px;
 }
+/* line 234, ../sass/components/_utilities.scss */
+#tmptnj-single .tmptnj-single_post ul li {
+  margin-bottom: 10px;
+  margin-left: 15px;
+  list-style: disc;
+}
 
-/* line 236, ../sass/components/_utilities.scss */
+/* line 243, ../sass/components/_utilities.scss */
 .tmptnj-single_sidebar {
   background-color: #fff;
   padding: 20px !important;
   border-radius: 3px;
   box-shadow: 1px 1px 10px #4444446b;
 }
-/* line 241, ../sass/components/_utilities.scss */
+/* line 248, ../sass/components/_utilities.scss */
 .tmptnj-single_sidebar ul {
   padding-left: 16px;
 }
-/* line 243, ../sass/components/_utilities.scss */
+/* line 250, ../sass/components/_utilities.scss */
 .tmptnj-single_sidebar ul li {
   list-style-type: disc;
 }
-/* line 245, ../sass/components/_utilities.scss */
+/* line 252, ../sass/components/_utilities.scss */
 .tmptnj-single_sidebar ul li a:hover {
   color: #182a46;
 }
 
-/* line 251, ../sass/components/_utilities.scss */
+/* line 258, ../sass/components/_utilities.scss */
 .tmptnj-PostAndImage .bg-image, .tmptnj-PostAndImage .tmptnj-slider .tmptnj-slider_slide, .tmptnj-slider .tmptnj-PostAndImage .tmptnj-slider_slide {
   padding-bottom: calc(70%);
 }
 
-/* line 256, ../sass/components/_utilities.scss */
+/* line 263, ../sass/components/_utilities.scss */
 #tmptnj-mantenimiento {
   text-align: center;
 }
-/* line 258, ../sass/components/_utilities.scss */
+/* line 265, ../sass/components/_utilities.scss */
 #tmptnj-mantenimiento .bg-image, #tmptnj-mantenimiento .tmptnj-slider .tmptnj-slider_slide, .tmptnj-slider #tmptnj-mantenimiento .tmptnj-slider_slide {
   padding-bottom: 25%;
   margin-bottom: 20px;
 }
 @media only screen and (max-width: 1200px) {
-  /* line 258, ../sass/components/_utilities.scss */
+  /* line 265, ../sass/components/_utilities.scss */
   #tmptnj-mantenimiento .bg-image, #tmptnj-mantenimiento .tmptnj-slider .tmptnj-slider_slide, .tmptnj-slider #tmptnj-mantenimiento .tmptnj-slider_slide {
     padding-bottom: 30%;
   }
 }
 @media only screen and (max-width: 992px) {
-  /* line 258, ../sass/components/_utilities.scss */
+  /* line 265, ../sass/components/_utilities.scss */
   #tmptnj-mantenimiento .bg-image, #tmptnj-mantenimiento .tmptnj-slider .tmptnj-slider_slide, .tmptnj-slider #tmptnj-mantenimiento .tmptnj-slider_slide {
     padding-bottom: 40%;
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 258, ../sass/components/_utilities.scss */
+  /* line 265, ../sass/components/_utilities.scss */
   #tmptnj-mantenimiento .bg-image, #tmptnj-mantenimiento .tmptnj-slider .tmptnj-slider_slide, .tmptnj-slider #tmptnj-mantenimiento .tmptnj-slider_slide {
     padding-bottom: 50%;
   }
 }
-/* line 264, ../sass/components/_utilities.scss */
+/* line 271, ../sass/components/_utilities.scss */
 #tmptnj-mantenimiento .bg-image .bg-absolute, #tmptnj-mantenimiento .tmptnj-slider .tmptnj-slider_slide .bg-absolute, .tmptnj-slider #tmptnj-mantenimiento .tmptnj-slider_slide .bg-absolute, #tmptnj-mantenimiento .bg-image .modal .exit-modal, .modal #tmptnj-mantenimiento .bg-image .exit-modal, #tmptnj-mantenimiento .tmptnj-slider .tmptnj-slider_slide .modal .exit-modal, .modal #tmptnj-mantenimiento .tmptnj-slider .tmptnj-slider_slide .exit-modal, .tmptnj-slider #tmptnj-mantenimiento .tmptnj-slider_slide .modal .exit-modal, .modal .tmptnj-slider #tmptnj-mantenimiento .tmptnj-slider_slide .exit-modal {
   background-color: rgba(255, 255, 255, 0.3);
 }
-/* line 265, ../sass/components/_utilities.scss */
+/* line 272, ../sass/components/_utilities.scss */
 #tmptnj-mantenimiento .bg-image h2, #tmptnj-mantenimiento .tmptnj-slider .tmptnj-slider_slide h2, .tmptnj-slider #tmptnj-mantenimiento .tmptnj-slider_slide h2 {
   color: #fff;
   font-size: 40px;
@@ -13066,12 +13072,12 @@ small {
   transform: translate(-50%, -50%);
 }
 @media only screen and (max-width: 600px) {
-  /* line 265, ../sass/components/_utilities.scss */
+  /* line 272, ../sass/components/_utilities.scss */
   #tmptnj-mantenimiento .bg-image h2, #tmptnj-mantenimiento .tmptnj-slider .tmptnj-slider_slide h2, .tmptnj-slider #tmptnj-mantenimiento .tmptnj-slider_slide h2 {
     font-size: 20px;
   }
 }
-/* line 274, ../sass/components/_utilities.scss */
+/* line 281, ../sass/components/_utilities.scss */
 #tmptnj-mantenimiento .tmptnj-mantenimiento_content {
   text-align: center;
 }
