@@ -322,3 +322,26 @@ function tarjeta_save_metas( $idtarjeta, $tarjeta ){
         }
     }
 }
+
+
+/*
+** Columns Producto
+*/
+add_filter( 'manage_tarjeta_posts_columns', 'set_custom_edit_tarjeta_columns' );
+function set_custom_edit_tarjeta_columns($columns) {
+    $columns['qz_info'] = __( 'Información', 'aempleo' );
+    return $columns;
+}
+
+add_action( 'manage_tarjeta_posts_custom_column' , 'custom_tarjeta_column', 10, 2 );
+function custom_tarjeta_column( $column, $post_id ) {
+    switch ( $column ) {
+        case 'qz_info' :
+
+            $puesto     = get_post_meta( $post_id, 'tarjeta_puesto', true );
+            $correo     = get_post_meta( $post_id, 'tarjeta_correo', true );
+            $telefono   = get_post_meta( $post_id, 'tarjeta_telefono', true );
+
+            echo $puesto . "<br>" . $correo . "<br>" . $telefono;         
+    }
+}

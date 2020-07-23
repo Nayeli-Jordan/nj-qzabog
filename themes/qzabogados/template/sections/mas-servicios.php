@@ -6,12 +6,8 @@ $content = apply_filters('the_content', $content);
 $content = str_replace(']]>', ']]>', $content);
 ?>
 <section id="nosotros" class="container tmptnj-columnsPost margin-top-bottom-30">
-	<div class="row">
-		<div class="col s12 l10 offset-l1 text-center margin-bottom-20">
-			<h3 class="margin-bottom-20"><?php echo get_the_title($page_id); ?></h3>
-			<p><?php echo $content; ?></p>			
-		</div>		
-	</div>
+	<h3 class="text-center margin-bottom-20"><?php echo get_the_title($page_id); ?></h3>
+	<div class="text-justify margin-bottom-20"><?php echo $content; ?></div>	
 	<div class="row row-complete">
 	<?php 
 	$columnsPost_args = array(

@@ -13,7 +13,7 @@ $content = str_replace(']]>', ']]>', $content);
 				<h4 class="uppercase margin-bottom-20"><?php echo get_the_title($page_id); ?></h4>
 				<p><?php echo $content; ?></p>
 			</div>
-			<div id="section-prev-contacto" class="col s12 m5 l4 xl3 tmptnj-callToAction_btn wow bounceInRight slow">
+			<div id="section-prev-clientes" class="col s12 m5 l4 xl3 tmptnj-callToAction_btn wow bounceInRight slow">
 				<a id="contacto" class="item-scroll btn btn-light"><span>Contáctanos</span><em class="icon-mail-alt"></em></a>
 			</div>
 		</div>			

@@ -56,10 +56,6 @@
 		<?php wp_head(); ?>
 	</head>
 	<body>
-		<?php 
-			$current_user = wp_get_current_user();
-			$current_user_id = $current_user->ID;
-		?>
 		<?php if (!is_singular( 'tarjeta' )) { ?>			
 			<header class="js-header">		
 				<div class="container">
@@ -67,35 +63,33 @@
 						<h1 class="hide"><?php bloginfo('name'); ?></h1>
 						<img src="<?php echo THEMEPATH; ?>images/identidad/logo.png" alt="">
 					</a>
-					<?php if ($current_user_id == 1) { ?>
-						<div class="tmptnj-nav">
-							<div class="tmptnj-nav-desktop">
-								<?php if (is_home()) { ?>
-									<ul>
-										<li><p id="nosotros" class="item-scroll">Nosotros</p></li>
-										<li><p id="servicios" class="item-scroll">Servicios</p></li>
-										<li><p id="clientes" class="item-scroll">Clientes</p></li>
-										<li><p id="contacto" class="item-scroll">Contacto</p></li>				
-									</ul>									
-								<?php } else {
-									wp_nav_menu( array( 
-										'theme_location' => 'top_menu' 
-									) );
-								} ?>				
-							</div>
-							<div class="social-links "><!-- wow fadeIn -->
-								<?php include (TEMPLATEPATH . '/template/contact-links.php'); ?>
-							</div>
-							<em id="open-nav" class="icon-menu"></em><!--  wow slideInRight -->
-							<nav>
-								<em class="close-nav icon-close hide-on-small"></em>
-								<?php wp_nav_menu( array( 
+					<div class="tmptnj-nav">
+						<div class="tmptnj-nav-desktop">
+							<?php if (is_home()) { ?>
+								<ul>
+									<li><p id="nosotros" class="item-scroll">Nosotros</p></li>
+									<li><p id="servicios" class="item-scroll">Servicios</p></li>
+									<li><p id="clientes" class="item-scroll">Clientes</p></li>
+									<li><p id="contacto" class="item-scroll">Contacto</p></li>				
+								</ul>									
+							<?php } else {
+								wp_nav_menu( array( 
 									'theme_location' => 'top_menu' 
-								) ); ?>
-								<em class="close-nav icon-close hide-on-sm-and-up"></em>				
-							</nav>
+								) );
+							} ?>				
 						</div>
-					<?php } ?>	
+						<div class="social-links "><!-- wow fadeIn -->
+							<?php include (TEMPLATEPATH . '/template/contact-links.php'); ?>
+						</div>
+						<em id="open-nav" class="icon-menu"></em><!--  wow slideInRight -->
+						<nav>
+							<em class="close-nav icon-close hide-on-small"></em>
+							<?php wp_nav_menu( array( 
+								'theme_location' => 'top_menu' 
+							) ); ?>
+							<em class="close-nav icon-close hide-on-sm-and-up"></em>				
+						</nav>
+					</div>
 				</div>
 			</header>
 		<?php } ?>

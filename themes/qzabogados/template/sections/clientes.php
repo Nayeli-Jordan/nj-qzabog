@@ -17,4 +17,5 @@ $content = str_replace(']]>', ']]>', $content);
 			<div class="bg-image margin-bottom-10" style="background-image: url(<?php echo get_the_post_thumbnail_url( $post_id, 'large' ); ?>)"></div>
 		</div>		
 	</div>
+	<div id="section-prev-contacto"></div>
 </section>

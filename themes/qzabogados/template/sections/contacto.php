@@ -2,7 +2,7 @@
 <section id="section-contacto" class="tmptnj-contact_form padding-top-bottom-60 bg-secondary">
 	<div class="container">
 		<div class="row row-complete">
-			<div class="col s12 m6 offset-m3 wow slideInLeft">
+			<div class="col s12 m6 offset-m3 wow fadeIn">
 				<h3 class="text-center margin-bottom-20"><strong>Contáctanos</strong></h3>
 				<?php echo do_shortcode('[contact-form-7 id="48" title="Formulario de contacto 1"]'); ?>
 			</div>
