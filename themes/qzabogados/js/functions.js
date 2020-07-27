@@ -51,16 +51,11 @@ var $=jQuery.noConflict();
 			$('html, body').animate({
 	            scrollTop: sectionID.offset().top -100
 	        }, 600);
+		});
 
-		    /*if ( sectionID == 'initial' ){
-		        $('html, body').animate({
-		            scrollTop: sectionID.offset().top
-		        }, 600);
-		    } else {
-		        $('html, body').animate({
-		            scrollTop: sectionID.offset().top -300
-		        }, 600);
-		    }*/
+		$(".menu-top-menu-container ul li a").click(function() {
+			$('.js-header nav').removeClass('open');
+			$('body').removeClass('overflow-hide');
 		});
 
 		// Nav Mobile

@@ -89,7 +89,7 @@
 						<a href="<?php echo $redfacebook ?>" target="_blank" alt="Facebook"><em class="icon-facebook"></em></a>
 						<a href="<?php echo $redtwitter ?>" target="_blank" alt="Twitter"><em class="icon-twitter"></em></a>						
 					</div> -->
-					<p><small>© <?php echo date("Y"); ?> <a href="https://www.behance.net/nayelijord22e2" target="_blank">QZABOGADOS</a></small></p>
+					<p><small>© <?php echo date("Y"); ?> <a href="<?php echo SITEURL; ?>">QZABOGADOS</a></small></p>
 				</div>
 			</div>
 		</div>

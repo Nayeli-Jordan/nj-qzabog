@@ -69,6 +69,15 @@ small                         { font-size: 85%; }
 .text-left                    { text-align: left; }
 .text-right                   { text-align: right; }
 .text-justify                 { text-align: justify; }
+@media #{$medium-and-down}{
+  .text-left-medium               { text-align: left; } 
+}
+@media #{$sm-and-down}{
+  .text-left-sm               { text-align: left; } 
+}
+@media #{$small-and-down}{
+  .text-left-small            { text-align: left; }
+}
 
 .text-last-center             { text-align-last: center; }
 .text-last-left               { text-align-last: left; }

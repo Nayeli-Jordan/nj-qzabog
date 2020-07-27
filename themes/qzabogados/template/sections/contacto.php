@@ -19,8 +19,9 @@
 			</div>
 		</div>
 		<div class="tmptnj-contact_map col s12 m6 bg-image relative" style="background-image: url(<?php echo THEMEPATH ?>images/mapa.png)">
-			<a href="https://goo.gl/maps/bT3WcGCtJEV3wbpk7" target="_blank" class="bg-absolute"></a>
-			<em class="icon-location color-primary wow zoomIn slow delay-1s"><span class="pulse"></span></em>
+			<a href="https://goo.gl/maps/gwfmiagT9eWUkGEa6" target="_blank" class="bg-absolute">
+				<em class="icon-location color-primary wow zoomIn slow delay-1s"><span class="pulse"></span></em>
+			</a>
 		</div>
 	</div>
 </section>

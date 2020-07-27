@@ -6440,60 +6440,62 @@ textarea {
   line-height: 30px;
   background-color: #fff;
   border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
   border: 0px;
   border-bottom: 1px solid #cacaca;
   outline: none;
 }
 
-/* line 18, ../sass/components/_forms.scss */
+/* line 20, ../sass/components/_forms.scss */
 textarea {
   height: 70px;
   line-height: 22px;
   resize: none;
 }
 
-/* line 23, ../sass/components/_forms.scss */
+/* line 25, ../sass/components/_forms.scss */
 input[type="submit"] {
   display: block;
 }
 
-/* line 26, ../sass/components/_forms.scss */
+/* line 28, ../sass/components/_forms.scss */
 ::placeholder {
   font-family: "futura_regular", sans-serif;
 }
 
-/* line 29, ../sass/components/_forms.scss */
+/* line 31, ../sass/components/_forms.scss */
 ::-webkit-inner-spin-button {
   display: none;
   -webkit-appearance: none;
 }
 
 /* Validaci├│n Parsley */
-/* line 35, ../sass/components/_forms.scss */
+/* line 37, ../sass/components/_forms.scss */
 .parsley-errors-list {
   padding: 0px !important;
   font-size: 12px;
 }
-/* line 38, ../sass/components/_forms.scss */
+/* line 40, ../sass/components/_forms.scss */
 .parsley-errors-list li {
   color: #c30008;
   list-style-type: none !important;
 }
 
 /* Contact form 7 */
-/* line 45, ../sass/components/_forms.scss */
+/* line 47, ../sass/components/_forms.scss */
 .wpcf7-submit {
   float: right;
 }
 
-/* line 46, ../sass/components/_forms.scss */
+/* line 48, ../sass/components/_forms.scss */
 .wpcf7-not-valid-tip {
   display: block;
   margin-bottom: 5px;
   font-size: 12px !important;
 }
 
-/* line 51, ../sass/components/_forms.scss */
+/* line 53, ../sass/components/_forms.scss */
 .wpcf7-validation-errors {
   border: none !important;
   margin: 0px !important;
@@ -6504,14 +6506,13 @@ input[type="submit"] {
   color: #595959 !important;
 }
 
-/* .wpcf7 {
-	background-color: #eeeeee;
-    padding: 15px 15px 30px 15px!important;
-    border-radius: 3px;
-    input:not([type="submit"]), textarea {
-    	background-color: transparent;
-    }
-} */
+/* line 62, ../sass/components/_forms.scss */
+.wpcf7-submit {
+  height: 40px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
 /*#wpadminbar { display: none!important; }*/
 /* line 6, ../sass/components/_global.scss */
 html {
@@ -12680,34 +12681,52 @@ small {
   text-align: justify;
 }
 
-/* line 73, ../sass/components/_typography.scss */
+@media only screen and (max-width: 992px) {
+  /* line 73, ../sass/components/_typography.scss */
+  .text-left-medium {
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 76, ../sass/components/_typography.scss */
+  .text-left-sm {
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 430px) {
+  /* line 79, ../sass/components/_typography.scss */
+  .text-left-small {
+    text-align: left;
+  }
+}
+/* line 82, ../sass/components/_typography.scss */
 .text-last-center {
   text-align-last: center;
 }
 
-/* line 74, ../sass/components/_typography.scss */
+/* line 83, ../sass/components/_typography.scss */
 .text-last-left {
   text-align-last: left;
 }
 
-/* line 75, ../sass/components/_typography.scss */
+/* line 84, ../sass/components/_typography.scss */
 .text-last-right {
   text-align-last: right;
 }
 
-/* line 76, ../sass/components/_typography.scss */
+/* line 85, ../sass/components/_typography.scss */
 .text-last-justify {
   text-align-last: justify;
 }
 
-/* line 78, ../sass/components/_typography.scss */
+/* line 87, ../sass/components/_typography.scss */
 .line-text-overflow {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-/* line 84, ../sass/components/_typography.scss */
+/* line 93, ../sass/components/_typography.scss */
 #section-clientes p {
   margin-bottom: 15px;
 }
@@ -12875,16 +12894,15 @@ small {
 @media only screen and (max-width: 600px) {
   /* line 138, ../sass/components/_utilities.scss */
   .tmptnj-callToAction .tmptnj-callToAction_content {
-    text-align: center;
     margin-bottom: 20px;
   }
 }
 
-/* line 146, ../sass/components/_utilities.scss */
+/* line 145, ../sass/components/_utilities.scss */
 .tmptnj-gallery img {
   display: block;
 }
-/* line 147, ../sass/components/_utilities.scss */
+/* line 146, ../sass/components/_utilities.scss */
 .tmptnj-gallery h5 {
   position: absolute;
   bottom: 0px;
@@ -12892,66 +12910,66 @@ small {
   color: #fff;
   text-shadow: 1px 1px 5px #33333345, -1px -1px 5px #67676745;
 }
-/* line 154, ../sass/components/_utilities.scss */
+/* line 153, ../sass/components/_utilities.scss */
 .tmptnj-gallery .grid-item {
   margin-bottom: 15px;
 }
-/* line 156, ../sass/components/_utilities.scss */
+/* line 155, ../sass/components/_utilities.scss */
 .tmptnj-gallery .grid-item .bg-absolute, .tmptnj-gallery .grid-item .modal .exit-modal, .modal .tmptnj-gallery .grid-item .exit-modal {
   background-color: transparent;
   -webkit-transition: 0.3s ease-out;
   -ms-transition: 0.3s ease-out;
   transition: 0.3s ease-out;
 }
-/* line 160, ../sass/components/_utilities.scss */
+/* line 159, ../sass/components/_utilities.scss */
 .tmptnj-gallery .grid-item:hover .bg-absolute, .tmptnj-gallery .grid-item:hover .modal .exit-modal, .modal .tmptnj-gallery .grid-item:hover .exit-modal {
   background-color: #33333345;
 }
-/* line 163, ../sass/components/_utilities.scss */
+/* line 162, ../sass/components/_utilities.scss */
 .tmptnj-gallery .tmptnj-gallery-modal .tmptnj-gallery-modal_image {
   position: relative;
 }
-/* line 165, ../sass/components/_utilities.scss */
+/* line 164, ../sass/components/_utilities.scss */
 .tmptnj-gallery .tmptnj-gallery-modal .tmptnj-gallery-modal_image .tmptnj-gallery-modal_degrade {
   background-image: linear-gradient(to top, rgba(51, 51, 51, 0.5), transparent 20%);
 }
-/* line 169, ../sass/components/_utilities.scss */
+/* line 168, ../sass/components/_utilities.scss */
 .tmptnj-gallery .tmptnj-gallery-modal .tmptnj-gallery-modal_content {
   padding: 20px 12px 12px;
 }
 
-/* line 173, ../sass/components/_utilities.scss */
+/* line 172, ../sass/components/_utilities.scss */
 .tmptnj-logos {
   z-index: 999;
   position: relative;
 }
-/* line 177, ../sass/components/_utilities.scss */
+/* line 176, ../sass/components/_utilities.scss */
 .tmptnj-logos .tmptnj-logos_content .tmptnj-logos_logo {
   display: inline-block;
   width: 110px;
   margin-bottom: 15px;
   padding: 0 10px;
 }
-/* line 182, ../sass/components/_utilities.scss */
+/* line 181, ../sass/components/_utilities.scss */
 .tmptnj-logos .tmptnj-logos_content .tmptnj-logos_logo .bg-image, .tmptnj-logos .tmptnj-logos_content .tmptnj-logos_logo .tmptnj-slider .tmptnj-slider_slide, .tmptnj-slider .tmptnj-logos .tmptnj-logos_content .tmptnj-logos_logo .tmptnj-slider_slide {
   width: 100%;
   padding-bottom: calc(50%);
 }
 
-/* line 191, ../sass/components/_utilities.scss */
+/* line 190, ../sass/components/_utilities.scss */
 .tmptnj-contact .tmptnj-contact_info {
   padding: 50px 8%;
   color: #fff;
 }
-/* line 194, ../sass/components/_utilities.scss */
+/* line 193, ../sass/components/_utilities.scss */
 .tmptnj-contact .tmptnj-contact_info a {
   color: #fff;
 }
-/* line 196, ../sass/components/_utilities.scss */
+/* line 195, ../sass/components/_utilities.scss */
 .tmptnj-contact .tmptnj-contact_info a:hover {
   color: #182a46;
 }
-/* line 200, ../sass/components/_utilities.scss */
+/* line 199, ../sass/components/_utilities.scss */
 .tmptnj-contact .tmptnj-contact_map .icon-location {
   font-size: 25px;
   position: absolute;
@@ -12963,103 +12981,103 @@ small {
   transform: translate(-50%, -50%);
 }
 @media only screen and (min-width: 601px) {
-  /* line 206, ../sass/components/_utilities.scss */
+  /* line 205, ../sass/components/_utilities.scss */
   .tmptnj-contact .tmptnj-contact_info {
     padding: 80px 8%;
   }
-  /* line 207, ../sass/components/_utilities.scss */
+  /* line 206, ../sass/components/_utilities.scss */
   .tmptnj-contact .row {
     display: flex;
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 210, ../sass/components/_utilities.scss */
+  /* line 209, ../sass/components/_utilities.scss */
   .tmptnj-contact .tmptnj-contact_map {
     height: 300px;
   }
 }
 
-/* line 217, ../sass/components/_utilities.scss */
+/* line 216, ../sass/components/_utilities.scss */
 #tmptnj-single .tmptnj-single_content {
   padding: 50px 0 150px;
   margin-bottom: -100px;
   color: #fff;
   text-align: center;
 }
-/* line 225, ../sass/components/_utilities.scss */
+/* line 224, ../sass/components/_utilities.scss */
 #tmptnj-single .tmptnj-single_post .bg-image, #tmptnj-single .tmptnj-single_post .tmptnj-slider .tmptnj-slider_slide, .tmptnj-slider #tmptnj-single .tmptnj-single_post .tmptnj-slider_slide {
   padding-bottom: calc(60%);
   border: 5px solid #fff;
   border-radius: 3px;
 }
-/* line 230, ../sass/components/_utilities.scss */
+/* line 229, ../sass/components/_utilities.scss */
 #tmptnj-single .tmptnj-single_post p {
   margin-bottom: 15px;
 }
-/* line 234, ../sass/components/_utilities.scss */
+/* line 233, ../sass/components/_utilities.scss */
 #tmptnj-single .tmptnj-single_post ul li {
   margin-bottom: 10px;
   margin-left: 15px;
   list-style: disc;
 }
 
-/* line 243, ../sass/components/_utilities.scss */
+/* line 242, ../sass/components/_utilities.scss */
 .tmptnj-single_sidebar {
   background-color: #fff;
   padding: 20px !important;
   border-radius: 3px;
   box-shadow: 1px 1px 10px #4444446b;
 }
-/* line 248, ../sass/components/_utilities.scss */
+/* line 247, ../sass/components/_utilities.scss */
 .tmptnj-single_sidebar ul {
   padding-left: 16px;
 }
-/* line 250, ../sass/components/_utilities.scss */
+/* line 249, ../sass/components/_utilities.scss */
 .tmptnj-single_sidebar ul li {
   list-style-type: disc;
 }
-/* line 252, ../sass/components/_utilities.scss */
+/* line 251, ../sass/components/_utilities.scss */
 .tmptnj-single_sidebar ul li a:hover {
   color: #182a46;
 }
 
-/* line 258, ../sass/components/_utilities.scss */
+/* line 257, ../sass/components/_utilities.scss */
 .tmptnj-PostAndImage .bg-image, .tmptnj-PostAndImage .tmptnj-slider .tmptnj-slider_slide, .tmptnj-slider .tmptnj-PostAndImage .tmptnj-slider_slide {
   padding-bottom: calc(70%);
 }
 
-/* line 263, ../sass/components/_utilities.scss */
+/* line 262, ../sass/components/_utilities.scss */
 #tmptnj-mantenimiento {
   text-align: center;
 }
-/* line 265, ../sass/components/_utilities.scss */
+/* line 264, ../sass/components/_utilities.scss */
 #tmptnj-mantenimiento .bg-image, #tmptnj-mantenimiento .tmptnj-slider .tmptnj-slider_slide, .tmptnj-slider #tmptnj-mantenimiento .tmptnj-slider_slide {
   padding-bottom: 25%;
   margin-bottom: 20px;
 }
 @media only screen and (max-width: 1200px) {
-  /* line 265, ../sass/components/_utilities.scss */
+  /* line 264, ../sass/components/_utilities.scss */
   #tmptnj-mantenimiento .bg-image, #tmptnj-mantenimiento .tmptnj-slider .tmptnj-slider_slide, .tmptnj-slider #tmptnj-mantenimiento .tmptnj-slider_slide {
     padding-bottom: 30%;
   }
 }
 @media only screen and (max-width: 992px) {
-  /* line 265, ../sass/components/_utilities.scss */
+  /* line 264, ../sass/components/_utilities.scss */
   #tmptnj-mantenimiento .bg-image, #tmptnj-mantenimiento .tmptnj-slider .tmptnj-slider_slide, .tmptnj-slider #tmptnj-mantenimiento .tmptnj-slider_slide {
     padding-bottom: 40%;
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 265, ../sass/components/_utilities.scss */
+  /* line 264, ../sass/components/_utilities.scss */
   #tmptnj-mantenimiento .bg-image, #tmptnj-mantenimiento .tmptnj-slider .tmptnj-slider_slide, .tmptnj-slider #tmptnj-mantenimiento .tmptnj-slider_slide {
     padding-bottom: 50%;
   }
 }
-/* line 271, ../sass/components/_utilities.scss */
+/* line 270, ../sass/components/_utilities.scss */
 #tmptnj-mantenimiento .bg-image .bg-absolute, #tmptnj-mantenimiento .tmptnj-slider .tmptnj-slider_slide .bg-absolute, .tmptnj-slider #tmptnj-mantenimiento .tmptnj-slider_slide .bg-absolute, #tmptnj-mantenimiento .bg-image .modal .exit-modal, .modal #tmptnj-mantenimiento .bg-image .exit-modal, #tmptnj-mantenimiento .tmptnj-slider .tmptnj-slider_slide .modal .exit-modal, .modal #tmptnj-mantenimiento .tmptnj-slider .tmptnj-slider_slide .exit-modal, .tmptnj-slider #tmptnj-mantenimiento .tmptnj-slider_slide .modal .exit-modal, .modal .tmptnj-slider #tmptnj-mantenimiento .tmptnj-slider_slide .exit-modal {
   background-color: rgba(255, 255, 255, 0.3);
 }
-/* line 272, ../sass/components/_utilities.scss */
+/* line 271, ../sass/components/_utilities.scss */
 #tmptnj-mantenimiento .bg-image h2, #tmptnj-mantenimiento .tmptnj-slider .tmptnj-slider_slide h2, .tmptnj-slider #tmptnj-mantenimiento .tmptnj-slider_slide h2 {
   color: #fff;
   font-size: 40px;
@@ -13072,12 +13090,12 @@ small {
   transform: translate(-50%, -50%);
 }
 @media only screen and (max-width: 600px) {
-  /* line 272, ../sass/components/_utilities.scss */
+  /* line 271, ../sass/components/_utilities.scss */
   #tmptnj-mantenimiento .bg-image h2, #tmptnj-mantenimiento .tmptnj-slider .tmptnj-slider_slide h2, .tmptnj-slider #tmptnj-mantenimiento .tmptnj-slider_slide h2 {
     font-size: 20px;
   }
 }
-/* line 281, ../sass/components/_utilities.scss */
+/* line 280, ../sass/components/_utilities.scss */
 #tmptnj-mantenimiento .tmptnj-mantenimiento_content {
   text-align: center;
 }

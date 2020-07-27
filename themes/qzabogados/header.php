@@ -49,7 +49,7 @@
 		<link rel="canonical" href="<?php echo site_url(); ?>" />
 
 		<!-- Sitemap Google Verify -->
-		<meta name="google-site-verification" content="" />
+		<meta name="google-site-verification" content="ZssUgWKr5zzuqIXN1HyNsdSVtRpkVB5EdfUfPlMKGFg" />
 
 		<!-- Noscript -->
 		<noscript>Tu navegador no soporta JavaScript!</noscript>
@@ -83,11 +83,10 @@
 						</div>
 						<em id="open-nav" class="icon-menu"></em><!--  wow slideInRight -->
 						<nav>
-							<em class="close-nav icon-close hide-on-small"></em>
+							<em class="close-nav icon-close"></em>
 							<?php wp_nav_menu( array( 
 								'theme_location' => 'top_menu' 
-							) ); ?>
-							<em class="close-nav icon-close hide-on-sm-and-up"></em>				
+							) ); ?>				
 						</nav>
 					</div>
 				</div>
